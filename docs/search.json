@@ -2,11 +2,11 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Hyggematematik",
+    "title": "Meget mere mat",
     "section": "",
-    "text": "Hvad er hyggematematik?\nHyggematematik er for dig, som synes, at matematik godt må være lidt hyggeligere. Og som tror på, at det godt kan lade sig gøre, selvom ideen virker helt skør for mange andre.\nHyggematematik er også for dig, som måske er lidt træt af endeløse rækker af regneopgaver i skolebøgerne, og måske har en fornemmelse af, at det hele godt kunne være lidt sjovere.\nDet er også for alle de forældre, der, ligesom mig selv, godt kan have svært ved at finde en super god måde at svare på alle de spørgsmål, vores børn har til deres matematiklektier.\nHyggematematik er nemlig også mit bedste forsøg på at forklare alle de ting, min datter Selma spørger om, som har med matematik at gøre.",
+    "text": "Hvad er meget mere mat?\nMeget mere mat er for dig, som synes, at matematik godt må være lidt hyggeligere. Og som tror på, at det godt kan lade sig gøre, selvom ideen virker helt skør for mange andre.\nMeget mere mat er også for dig, som måske er lidt træt af endeløse rækker af regneopgaver i skolebøgerne, og måske har en fornemmelse af, at det hele godt kunne være lidt sjovere.\nDet er også for alle de forældre, der, ligesom mig selv, godt kan have svært ved at finde en super god måde at svare på alle de spørgsmål, vores børn har til deres matematiklektier.\nHyggematematik er nemlig også mit bedste forsøg på at forklare alle de ting, min datter Selma spørger om, som har med matematik at gøre.",
     "crumbs": [
-      "Hvad er hyggematematik?"
+      "Hvad er meget mere mat?"
     ]
   },
   {
@@ -334,7 +334,7 @@
     "href": "kombinatorik.html#opgaver",
     "title": "Kombinatorik",
     "section": "Opgaver",
-    "text": "Opgaver\nOpgave 1: På hvor mange måder kan man blande 10 stykker slik ud af de 100 forskellige stykker kiosken har?\n\n\n\n\n\n\nTipVis svar\n\n\n\n\n\nDette er et problem med uordnet udvælgelse med tilbagelægning, da: - Rækkefølgen af slik i posen er ligegyldig (uordnet) - Man kan vælge flere af samme slags slik (med tilbagelægning)\nVi bruger formlen: \\(\\binom{n+k-1}{k} = \\binom{100+10-1}{10} = \\binom{109}{10}\\)\n\n\nAntallet af måder: 4,263422e+13\n\n\n\n\n\nOpgave 2: Hvis en restaurant har 5 forretter, 8 hovedretter og 4 desserter, på hvor mange måder kan du sammensætte en komplet menu?\n\n\n\n\n\n\nTipVis svar\n\n\n\n\n\nDette er et simpelt multiplikationsproblem: - Du skal vælge 1 forret ud af 5 muligheder - Du skal vælge 1 hovedret ud af 8 muligheder - Du skal vælge 1 dessert ud af 4 muligheder\n\n\nAntal mulige menuer: 160\n\n\n\n\n\nOpgave 3: Hvor mange forskellige 4-cifret koder kan man lave, hvis alle cifre skal være forskellige?\n\n\n\n\n\n\nTipVis svar\n\n\n\n\n\nDette er et problem med ordnet udvælgelse uden tilbagelægning: - Rækkefølgen betyder noget (ordnet) - Vi kan ikke bruge samme ciffer to gange (uden tilbagelægning)\nVi vælger 4 cifre ud af 10 mulige (0-9), hvor rækkefølgen betyder noget.\nFormlen er: \\(\\frac{n!}{(n-k)!} = \\frac{10!}{(10-4)!} = \\frac{10!}{6!}\\)\n\n\nAntal mulige koder: 5.040\n\n\n\nDirekte beregning: 5.040",
+    "text": "Opgaver\nOpgave 1: På hvor mange måder kan man blande 10 stykker slik ud af de 100 forskellige stykker kiosken har?\n\n\n\n\n\n\nVis svar\n\n\n\n\n\nDette er et problem med uordnet udvælgelse med tilbagelægning, da: - Rækkefølgen af slik i posen er ligegyldig (uordnet) - Man kan vælge flere af samme slags slik (med tilbagelægning)\nVi bruger formlen: \\(\\binom{n+k-1}{k} = \\binom{100+10-1}{10} = \\binom{109}{10}\\)\n\n\nAntallet af måder: 4,263422e+13\n\n\n\n\n\nOpgave 2: Hvis en restaurant har 5 forretter, 8 hovedretter og 4 desserter, på hvor mange måder kan du sammensætte en komplet menu?\n\n\n\n\n\n\nVis svar\n\n\n\n\n\nDette er et simpelt multiplikationsproblem: - Du skal vælge 1 forret ud af 5 muligheder - Du skal vælge 1 hovedret ud af 8 muligheder - Du skal vælge 1 dessert ud af 4 muligheder\n\n\nAntal mulige menuer: 160\n\n\n\n\n\nOpgave 3: Hvor mange forskellige 4-cifret koder kan man lave, hvis alle cifre skal være forskellige?\n\n\n\n\n\n\nVis svar\n\n\n\n\n\nDette er et problem med ordnet udvælgelse uden tilbagelægning: - Rækkefølgen betyder noget (ordnet) - Vi kan ikke bruge samme ciffer to gange (uden tilbagelægning)\nVi vælger 4 cifre ud af 10 mulige (0-9), hvor rækkefølgen betyder noget.\nFormlen er: \\(\\frac{n!}{(n-k)!} = \\frac{10!}{(10-4)!} = \\frac{10!}{6!}\\)\n\n\nAntal mulige koder: 5.040\n\n\n\nDirekte beregning: 5.040",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Kombinatorik</span>"
     ]

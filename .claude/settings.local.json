@@ -6,7 +6,11 @@
       "Bash(quarto tools list:*)",
       "Bash(quarto install tool tinytex:*)",
       "Bash(gh repo view:*)",
-      "Bash(gh api repos/:owner/:repo/pages)"
+      "Bash(gh api repos/:owner/:repo/pages)",
+      "Bash(dir \"C:\\\\Users\\\\LMDN\\\\OneDrive - Novo Nordisk\\\\R-Projects\\\\hyggematematik\\\\*.Rproj\")",
+      "Bash(findstr:*)",
+      "Bash(where.exe:*)",
+      "Bash(git config:*)"
     ],
     "deny": [],
     "ask": []

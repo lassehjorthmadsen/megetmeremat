@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**Hyggematematik** is a Danish Quarto book project about mathematics for curious elementary school students. The book is authored by Selma and Lasse (father-daughter collaboration) and published at [https://megetmeremat.dk](https://megetmeremat.dk).
+**Meget mere mat** is a Danish Quarto book project about mathematics for curious elementary school students. The book is authored by Selma and Lasse (father-daughter collaboration) and published at [https://megetmeremat.dk](https://megetmeremat.dk).
 
 ## Development Commands
 
