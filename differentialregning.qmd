@@ -337,3 +337,727 @@ Her er en masse regneregler, man kan bruge, når man differentierer. Det kunne v
 | $e^{kx}$      | $k \cdot e^{kx}$      |
 | $\sqrt{x}$    | $\frac{1}{2\sqrt{x}}$ |
 | $\ln(x)$      | $\frac{1}{x}$         |
+
+## Opgaver
+
+**Opgave 1:** Du har funktionen $f(x) = x^2$. Find den afledte funktion $f'(x)$ ved at bruge reglen fra appendix.
+
+::: {.callout-tip collapse="true" title="Vis svar"}
+Dette handler om at finde den afledte af en simpel potensfunktion. Vi bruger reglen for $x^n$ fra appendix-tabellen.
+
+Når $f(x) = x^n$, så er $f'(x) = n \cdot x^{n-1}$
+
+Her er $n = 2$, så:
+$$f'(x) = 2 \cdot x^{2-1} = 2x$$
+
+```{r opgave1}
+# Vi kan verificere ved at beregne hældningen for et specifikt punkt
+x_værdi <- 5
+afledt_værdi <- 2 * x_værdi
+cat("Den afledte funktion er f'(x) = 2x\n")
+cat("For eksempel: f'(5) =", format(afledt_værdi, big.mark = ".", decimal.mark = ","))
+```
+:::
+
+**Opgave 2:** Emma kører på skateboard, og hendes position (i meter) er givet ved $s(t) = 3t^2$, hvor $t$ er tiden i sekunder. Hvad er hendes hastighed efter 2 sekunder?
+
+::: {.callout-tip collapse="true" title="Vis svar"}
+Dette handler om at finde hastigheden, som er den afledte af positionsfunktionen.
+
+Positionsfunktionen er $s(t) = 3t^2$
+
+Vi bruger reglen for $x^n$ og husker at konstanten ganges med:
+$$s'(t) = 3 \cdot 2 \cdot t^{2-1} = 6t$$
+
+Hastigheden efter 2 sekunder er:
+$$s'(2) = 6 \cdot 2 = 12 \text{ meter per sekund}$$
+
+```{r opgave2}
+# Beregn hastigheden efter 2 sekunder
+t <- 2
+hastighed <- 6 * t
+cat("Emmas hastighed efter", t, "sekunder er:", format(hastighed, big.mark = ".", decimal.mark = ","), "meter per sekund")
+```
+:::
+
+**Opgave 3:** Find den afledte af funktionen $f(x) = 17$. Hvad fortæller svaret dig?
+
+::: {.callout-tip collapse="true" title="Vis svar"}
+Dette handler om at differentiere en konstant funktion. Fra appendix ved vi, at den afledte af en konstant $k$ er 0.
+
+$$f(x) = 17$$
+$$f'(x) = 0$$
+
+Dette betyder, at funktionen har hældning 0 overalt - den er helt flad! Hvis dette var en positionsfunktion, ville det betyde, at objektet står helt stille.
+
+```{r opgave3}
+# En konstant funktion har altid afledt = 0
+konstant <- 17
+afledt <- 0
+cat("Den afledte af", konstant, "er:", format(afledt, big.mark = ".", decimal.mark = ","))
+cat("\nDette betyder, at grafen er helt flad.")
+```
+:::
+
+**Opgave 4:** En legetøjsraket sendes op i luften. Dens højde (i meter) er givet ved $h(t) = 100t - 5t^2$, hvor $t$ er tiden i sekunder. Find rakettens hastighed opad efter 5 sekunder.
+
+::: {.callout-tip collapse="true" title="Vis svar"}
+Dette handler om at finde den lodrette hastighed, som er den afledte af højdefunktionen.
+
+Højdefunktionen er $h(t) = 100t - 5t^2$
+
+Vi differentierer hvert led for sig:
+
+- Den afledte af $100t$ er $100$ (regel: den afledte af $kx$ er $k$)
+- Den afledte af $-5t^2$ er $-5 \cdot 2t = -10t$
+
+Så hastighedsfunktionen er:
+$$h'(t) = 100 - 10t$$
+
+Efter 5 sekunder:
+$$h'(5) = 100 - 10 \cdot 5 = 100 - 50 = 50 \text{ meter per sekund}$$
+
+```{r opgave4}
+# Beregn hastigheden efter 5 sekunder
+t <- 5
+hastighed <- 100 - 10 * t
+cat("Rakettens hastighed opad efter", t, "sekunder er:", format(hastighed, big.mark = ".", decimal.mark = ","), "meter per sekund")
+```
+:::
+
+**Opgave 5:** Find den afledte af funktionen $f(x) = 2x^3 + 5x - 7$. Brug reglen om, at man kan differentiere hvert led for sig.
+
+::: {.callout-tip collapse="true" title="Vis svar"}
+Dette handler om at differentiere en funktion med flere led. Vi differentierer hvert led for sig og lægger resultaterne sammen.
+
+$f(x) = 2x^3 + 5x - 7$
+
+- Den afledte af $2x^3$ er $2 \cdot 3x^2 = 6x^2$
+- Den afledte af $5x$ er $5$
+- Den afledte af $-7$ er $0$ (konstant)
+
+Derfor er:
+$$f'(x) = 6x^2 + 5$$
+
+```{r opgave5}
+# Verificer med et eksempel ved x = 3
+x <- 3
+afledt_værdi <- 6 * x^2 + 5
+cat("Den afledte funktion er f'(x) = 6x² + 5\n")
+cat("For eksempel: f'(3) =", format(afledt_værdi, big.mark = ".", decimal.mark = ","))
+```
+:::
+
+**Opgave 6:** Find ligningen for tangenten til grafen $f(x) = x^2$ ved punktet $x = 4$.
+
+::: {.callout-tip collapse="true" title="Vis svar"}
+Dette handler om at finde tangentligningen ved et specifikt punkt. Vi skal bruge:
+
+1. Punktet på grafen: $(x_0, f(x_0))$
+2. Hældningen i punktet: $f'(x_0)$
+3. Tangentens ligning: $y = f(x_0) + f'(x_0) \cdot (x - x_0)$
+
+Vi har $f(x) = x^2$, så $f'(x) = 2x$
+
+Ved $x_0 = 4$:
+
+- $f(4) = 4^2 = 16$
+- $f'(4) = 2 \cdot 4 = 8$
+
+Tangentens ligning bliver:
+$$y = 16 + 8(x - 4) = 16 + 8x - 32 = 8x - 16$$
+
+```{r opgave6}
+# Beregn tangentens ligning ved x = 4
+x0 <- 4
+f_x0 <- x0^2
+f_mærke_x0 <- 2 * x0
+
+cat("Punktet på grafen: (", x0, ", ", f_x0, ")\n", sep = "")
+cat("Hældning i punktet: ", format(f_mærke_x0, big.mark = ".", decimal.mark = ","), "\n", sep = "")
+cat("Tangentens ligning: y = ", f_mærke_x0, "x - ", f_mærke_x0 * x0 - f_x0, sep = "")
+```
+:::
+
+**Opgave 7:** Sofie kører på cykel, og hendes position er givet ved $s(t) = t^3 - 9t^2 + 15t$ meter, hvor $t$ er tiden i sekunder. Hvornår står hun stille (dvs. hvornår er hastigheden 0)?
+
+::: {.callout-tip collapse="true" title="Vis svar"}
+Dette handler om at finde, hvornår hastigheden er 0. Hastigheden er den afledte af positionsfunktionen.
+
+$s(t) = t^3 - 9t^2 + 15t$
+
+Den afledte (hastigheden) er:
+$s'(t) = 3t^2 - 18t + 15$
+
+Vi skal løse ligningen $s'(t) = 0$:
+$3t^2 - 18t + 15 = 0$
+
+Vi kan dividere med 3:
+$t^2 - 6t + 5 = 0$
+
+Dette kan faktoriseres som:
+$(t - 1)(t - 5) = 0$
+
+Så $t = 1$ eller $t = 5$
+
+```{r opgave7}
+# Verificer løsningerne
+t_værdier <- c(1, 5)
+for (t in t_værdier) {
+  hastighed <- 3*t^2 - 18*t + 15
+  cat("Ved t =", t, "sekunder er hastigheden:", format(hastighed, big.mark = ".", decimal.mark = ","), "m/s\n")
+}
+cat("\nSofie står stille efter 1 sekund og igen efter 5 sekunder.")
+```
+:::
+
+**Opgave 8:** En ballon stiger op med en højde givet ved $h(t) = 4t + t^2$ meter, hvor $t$ er tiden i minutter. Find tangentens ligning ved $t = 3$ minutter, og forklar hvad tangentens hældning betyder.
+
+::: {.callout-tip collapse="true" title="Vis svar"}
+Dette handler om at finde tangenten til en højdefunktion og fortolke dens betydning.
+
+$h(t) = 4t + t^2$
+
+Den afledte (stigehastigheden) er:
+$h'(t) = 4 + 2t$
+
+Ved $t = 3$:
+
+- Højden er: $h(3) = 4 \cdot 3 + 3^2 = 12 + 9 = 21$ meter
+- Stigehastigheden er: $h'(3) = 4 + 2 \cdot 3 = 10$ meter per minut
+
+Tangentens ligning:
+$y = 21 + 10(t - 3) = 21 + 10t - 30 = 10t - 9$
+
+Hældningen 10 betyder, at ballonen stiger med 10 meter per minut ved $t = 3$.
+
+```{r opgave8}
+# Beregn tangenten ved t = 3
+t0 <- 3
+h_t0 <- 4 * t0 + t0^2
+h_mærke_t0 <- 4 + 2 * t0
+
+cat("Efter", t0, "minutter:\n")
+cat("- Højde:", format(h_t0, big.mark = ".", decimal.mark = ","), "meter\n")
+cat("- Stigehastighed:", format(h_mærke_t0, big.mark = ".", decimal.mark = ","), "meter per minut\n")
+cat("- Tangentens ligning: y =", h_mærke_t0, "t -", h_mærke_t0 * t0 - h_t0)
+```
+:::
+
+**Opgave 9:** Et badekar fyldes med vand. Vandmængden (i liter) er givet ved $V(t) = 20t - 0.5t^2$, hvor $t$ er tiden i minutter. Hvornår fyldes karret langsomst?
+
+::: {.callout-tip collapse="true" title="Vis svar"}
+Dette handler om at finde, hvornår fyldningshastigheden er mindst. Fyldningshastigheden er den afledte af vandmængden.
+
+$V(t) = 20t - 0.5t^2$
+
+Fyldningshastigheden er:
+$V'(t) = 20 - t$
+
+Dette er en lineær funktion, der falder når $t$ stiger. Den mindste hastighed (inden den bliver negativ) er når $V'(t) = 0$:
+
+$20 - t = 0$
+$t = 20$
+
+Ved $t = 20$ minutter er fyldningshastigheden 0, og derefter bliver den negativ (vandet løber ud igen!).
+
+```{r opgave9}
+# Vis fyldningshastigheden over tid
+tidspunkter <- c(0, 5, 10, 15, 20)
+for (t in tidspunkter) {
+  hastighed <- 20 - t
+  cat("Efter", t, "minutter: Fyldningshastighed =", format(hastighed, big.mark = ".", decimal.mark = ","), "liter/minut\n")
+}
+cat("\nBadekarret fyldes langsomst efter 20 minutter (faktisk stopper det med at fylde).")
+```
+:::
+
+**Opgave 10:** Oliver cykler i modvind. Hans position er givet ved $s(t) = 10t - 0.2t^3$ meter, hvor $t$ er tiden i sekunder. Beskriv hvordan hans hastighed ændrer sig i de første 6 sekunder.
+
+::: {.callout-tip collapse="true" title="Vis svar"}
+Dette handler om at analysere, hvordan hastigheden ændrer sig over tid.
+
+$s(t) = 10t - 0.2t^3$
+
+Hastighedsfunktionen er:
+$s'(t) = 10 - 0.6t^2$
+
+Lad os beregne hastigheden ved forskellige tidspunkter:
+
+```{r opgave10}
+# Beregn og vis hastigheden over tid
+tidspunkter <- 0:6
+cat("Tid (sek) | Hastighed (m/s)\n")
+cat("----------|---------------\n")
+for (t in tidspunkter) {
+  hastighed <- 10 - 0.6 * t^2
+  cat(sprintf("%9d | %14s\n", t, format(round(hastighed, 1),
+                                        big.mark = ".", decimal.mark = ",")))
+}
+
+cat("\nBeskrivelse: Oliver starter med hastighed 10 m/s, men modvinden")
+cat("\ngør det sværere og sværere. Hans hastighed falder hele tiden,")
+cat("\nog efter cirka 4 sekunder er den næsten halveret.")
+```
+:::
+
+**Opgave 11:** En bil kører med position $s(t) = 5t^2 + 10t$ meter, hvor $t$ er tiden i sekunder. Find bilens acceleration.
+
+::: {.callout-tip collapse="true" title="Vis svar"}
+Dette handler om at finde accelerationen, som er den dobbelt afledte af positionsfunktionen.
+
+$s(t) = 5t^2 + 10t$
+
+Først finder vi hastigheden (første afledte):
+$s'(t) = 10t + 10$
+
+Derefter finder vi accelerationen (anden afledte):
+$s''(t) = 10$
+
+Bilen har en konstant acceleration på 10 m/s².
+
+```{r opgave11}
+# Beregn hastighed og acceleration
+t_eksempel <- 3
+position <- 5 * t_eksempel^2 + 10 * t_eksempel
+hastighed <- 10 * t_eksempel + 10
+acceleration <- 10
+
+cat("Ved t =", t_eksempel, "sekunder:\n")
+cat("- Position:", format(position, big.mark = ".", decimal.mark = ","), "meter\n")
+cat("- Hastighed:", format(hastighed, big.mark = ".", decimal.mark = ","), "m/s\n")
+cat("- Acceleration:", format(acceleration, big.mark = ".", decimal.mark = ","), "m/s²\n")
+cat("\nAccelerationen er konstant uanset tidspunktet!")
+```
+:::
+
+**Opgave 12:** En rutsjebane har højdeprofilen $h(x) = -x^3 + 12x^2 - 20x + 50$ meter, hvor $x$ er den vandrette afstand i meter. Find $h''(x)$ og forklar hvad det fortæller om rutsjebanen.
+
+::: {.callout-tip collapse="true" title="Vis svar"}
+Dette handler om at finde den dobbelt afledte og fortolke dens betydning for en rutsjebanes form.
+
+$h(x) = -x^3 + 12x^2 - 20x + 50$
+
+Første afledte (hældningen):
+$h'(x) = -3x^2 + 24x - 20$
+
+Anden afledte (krumningen):
+$h''(x) = -6x + 24$
+
+Den dobbelt afledte fortæller os om rutsjebanen krummer opad eller nedad:
+
+- Når $h''(x) > 0$: Banen krummer opad (konkav op)
+- Når $h''(x) < 0$: Banen krummer nedad (konkav ned)
+- Når $h''(x) = 0$: Vendepunkt (skifter krumning)
+
+Vendepunkt: $-6x + 24 = 0 \Rightarrow x = 4$
+
+```{r opgave12}
+# Undersøg krumningen forskellige steder
+x_værdier <- c(0, 2, 4, 6, 8)
+cat("Position (x) | h''(x) | Krumning\n")
+cat("-------------|--------|----------\n")
+for (x in x_værdier) {
+  h_dobbeltmærke <- -6 * x + 24
+  krumning <- if(h_dobbeltmærke > 0) "Opad" else if(h_dobbeltmærke < 0) "Nedad" else "Vendepunkt"
+  cat(sprintf("%12d | %6d | %s\n", x, h_dobbeltmærke, krumning))
+}
+cat("\nRutsjebanen skifter fra at krumme opad til at krumme nedad ved x = 4 meter.")
+```
+:::
+
+**Opgave 13:** Er accelerationen konstant for objektet med position $f(x) = 3x^2 + 2x + 1$? Bevis dit svar.
+
+::: {.callout-tip collapse="true" title="Vis svar"}
+Dette handler om at undersøge, om den dobbelt afledte er konstant.
+
+$f(x) = 3x^2 + 2x + 1$
+
+Første afledte (hastighed):
+$f'(x) = 6x + 2$
+
+Anden afledte (acceleration):
+$f''(x) = 6$
+
+Ja, accelerationen er konstant! Den er altid 6 uanset værdien af $x$.
+
+```{r opgave13}
+# Verificer at accelerationen er konstant
+x_værdier <- c(0, 1, 5, 10, 100)
+cat("x-værdi | f'(x) (hastighed) | f''(x) (acceleration)\n")
+cat("--------|-------------------|---------------------\n")
+for (x in x_værdier) {
+  hastighed <- 6 * x + 2
+  acceleration <- 6
+  cat(sprintf("%7d | %17s | %19s\n",
+              x,
+              format(hastighed, big.mark = ".", decimal.mark = ","),
+              format(acceleration, big.mark = ".", decimal.mark = ",")))
+}
+cat("\nKonklusion: Accelerationen er konstant = 6 for alle x-værdier.")
+```
+:::
+
+**Opgave 14:** Et fyrværkeri skydes op med højden $h(t) = 40t - 5t^2$ meter, hvor $t$ er tiden i sekunder. Find:
+
+a) Hvornår fyrværkeriet når sin maksimale højde
+b) Hvad er den maksimale højde?
+c) Hvad er accelerationen?
+
+::: {.callout-tip collapse="true" title="Vis svar"}
+Dette handler om at bruge differentialregning til at finde maksimum og analysere bevægelse.
+
+$h(t) = 40t - 5t^2$
+
+Første afledte (hastighed opad):
+$h'(t) = 40 - 10t$
+
+Anden afledte (acceleration):
+$h''(t) = -10$
+
+a) Maksimal højde nås når hastigheden er 0:
+$40 - 10t = 0$
+$t = 4$ sekunder
+
+b) Maksimal højde:
+$h(4) = 40 \cdot 4 - 5 \cdot 4^2 = 160 - 80 = 80$ meter
+
+c) Accelerationen er konstant $-10$ m/s² (tyngdekraften)
+
+```{r opgave14}
+# Beregn svarene
+t_max <- 4
+h_max <- 40 * t_max - 5 * t_max^2
+acceleration <- -10
+
+cat("a) Fyrværkeriet når maksimal højde efter", t_max, "sekunder\n")
+cat("b) Den maksimale højde er", format(h_max, big.mark = ".", decimal.mark = ","), "meter\n")
+cat("c) Accelerationen er", acceleration, "m/s² (negativ pga. tyngdekraften)\n")
+
+# Vis forløbet
+cat("\nHøjde over tid:\n")
+for (t in 0:8) {
+  h <- 40 * t - 5 * t^2
+  if (h >= 0) {
+    cat("t =", t, "s: h =", format(h, big.mark = ".", decimal.mark = ","), "m\n")
+  }
+}
+```
+:::
+
+**Opgave 15:** En bus bremser med hastigheden $v(t) = 30 - 6t$ m/s, hvor $t$ er tiden i sekunder efter bremsningen starter. Find:
+
+a) Bussens acceleration
+b) Hvornår bussen stopper
+c) Hvor langt kører bussen under opbremsningen?
+
+::: {.callout-tip collapse="true" title="Vis svar"}
+Dette handler om at arbejde baglæns fra hastighed til position og analysere opbremsning.
+
+Givet: $v(t) = 30 - 6t$
+
+a) Accelerationen er den afledte af hastigheden:
+$a(t) = v'(t) = -6$ m/s²
+
+b) Bussen stopper når $v(t) = 0$:
+$30 - 6t = 0$
+$t = 5$ sekunder
+
+c) For at finde distancen skal vi integrere hastigheden. Siden $v(t) = s'(t)$, må:
+$s(t) = 30t - 3t^2$ (plus en konstant, som vi sætter til 0)
+
+Distance kørt fra $t = 0$ til $t = 5$:
+$s(5) = 30 \cdot 5 - 3 \cdot 5^2 = 150 - 75 = 75$ meter
+
+```{r opgave15}
+# Beregn svarene
+acceleration <- -6
+t_stop <- 5
+distance <- 30 * t_stop - 3 * t_stop^2
+
+cat("a) Acceleration:", format(acceleration, big.mark = ".", decimal.mark = ","), "m/s² (konstant opbremsning)\n")
+cat("b) Bussen stopper efter", t_stop, "sekunder\n")
+cat("c) Bussen kører", format(distance, big.mark = ".", decimal.mark = ","), "meter under opbremsningen\n")
+
+# Vis hastighed over tid
+cat("\nHastighed under opbremsning:\n")
+for (t in 0:5) {
+  v <- 30 - 6 * t
+  cat("t =", t, "s: v =", format(v, big.mark = ".", decimal.mark = ","), "m/s\n")
+}
+```
+:::
+
+**Opgave 16:** En solsikke vokser med højden $h(t) = 0.1t^3 - t^2 + 5t$ centimeter, hvor $t$ er tiden i dage. Analyser plantens vækstmønster de første 12 dage:
+
+a) Hvornår vokser planten hurtigst?
+b) Hvornår vokser planten langsomst?
+c) Er der perioder hvor planten næsten ikke vokser?
+
+::: {.callout-tip collapse="true" title="Vis svar"}
+Dette handler om at analysere et komplekst vækstmønster ved hjælp af første og anden afledte.
+
+$h(t) = 0.1t^3 - t^2 + 5t$
+
+Væksthastigheden (første afledte):
+$h'(t) = 0.3t^2 - 2t + 5$
+
+Vækstaccelerationen (anden afledte):
+$h''(t) = 0.6t - 2$
+
+For at finde ekstremværdier for væksthastigheden, sætter vi $h''(t) = 0$:
+$0.6t - 2 = 0$
+$t = \frac{20}{6} = 3.33$ dage
+
+Ved $t = 3.33$: $h''(3.33) = 0$ (vendepunkt for vækst)
+
+- For $t < 3.33$: $h''(t) < 0$ (væksten aftager)
+- For $t > 3.33$: $h''(t) > 0$ (væksten tiltager)
+
+```{r opgave16}
+# Analyser vækstmønsteret
+h_mærke <- function(t) 0.3 * t^2 - 2 * t + 5
+
+# Find minimum vækst
+t_min <- 20/6
+min_vækst <- h_mærke(t_min)
+
+# Vis vækstanalyse
+cat("Vækstanalyse over 12 dage:\n\n")
+dage <- c(0, 2, 3.33, 6, 9, 12)
+for (t in dage) {
+  vækst <- h_mærke(t)
+  cat(sprintf("Dag %.2f: Vækst = %.2f cm/dag\n",
+              t, vækst))
+}
+
+cat("\nKonklusioner:\n")
+cat("a) Planten vokser hurtigst på dag 12 med",
+    format(round(h_mærke(12), 2), decimal.mark = ","), "cm/dag\n")
+cat("b) Planten vokser langsomst på dag",
+    format(round(t_min, 2), decimal.mark = ","), "med",
+    format(round(min_vækst, 2), decimal.mark = ","), "cm/dag\n")
+cat("c) Nej, væksten er aldrig 0 eller negativ - planten vokser hele tiden!")
+```
+:::
+
+**Opgave 17:** En kop kaffe køler af ifølge formlen $T(t) = 20 + 60e^{-0.1t}$ grader Celsius, hvor $t$ er tiden i minutter. Brug reglen for $e^{kx}$ fra appendix til at finde:
+
+a) Hvor hurtigt falder temperaturen efter 5 minutter?
+b) Hvornår falder temperaturen hurtigst?
+
+::: {.callout-tip collapse="true" title="Vis svar"}
+Dette handler om at differentiere en eksponentialfunktion og analysere afkøling.
+
+$T(t) = 20 + 60e^{-0.1t}$
+
+Fra appendix ved vi at den afledte af $e^{kx}$ er $k \cdot e^{kx}$.
+Her er $k = -0.1$, så:
+
+$T'(t) = 60 \cdot (-0.1) \cdot e^{-0.1t} = -6e^{-0.1t}$
+
+a) Efter 5 minutter:
+$T'(5) = -6e^{-0.5} = -6 \cdot 0.6065 = -3.64$ °C/minut
+
+b) For at finde hvornår temperaturen falder hurtigst, ser vi på $T'(t) = -6e^{-0.1t}$.
+Da $e^{-0.1t}$ altid er positiv og aftager med tiden, er $T'(t)$ altid negativ og størst i absolutværdi ved $t = 0$.
+
+Temperaturen falder altså hurtigst i starten!
+
+```{r opgave17}
+# Temperaturanalyse
+T <- function(t) 20 + 60 * exp(-0.1 * t)
+T_mærke <- function(t) -6 * exp(-0.1 * t)
+
+# a) Temperaturændring efter 5 minutter
+t <- 5
+temp <- T(t)
+temp_ændring <- T_mærke(t)
+
+cat("a) Efter 5 minutter:\n")
+cat("   Temperatur:", format(round(temp, 1), decimal.mark = ","), "°C\n")
+cat("   Afkølingshastighed:", format(round(temp_ændring, 2), decimal.mark = ","), "°C/minut\n")
+
+# b) Vis afkøling over tid
+cat("\nb) Afkølingshastighed over tid:\n")
+for (t in c(0, 2, 5, 10, 20)) {
+  cat(sprintf("   t = %2d min: %.2f °C/min\n", t, T_mærke(t)))
+}
+cat("\nKonklusion: Kaffen køler hurtigst af i starten (t = 0)!")
+```
+:::
+
+**Opgave 18:** En bølge beskrives af funktionen $y(x) = x^4 - 8x^3 + 18x^2 - 10$. Find alle steder hvor bølgen:
+
+a) Har vandret tangent (toppe og dale)
+b) Skifter krumningsretning (vendepunkter)
+c) Tegn en skitse af bølgen baseret på din analyse
+
+::: {.callout-tip collapse="true" title="Vis svar"}
+Dette handler om at lave en fuldstændig analyse af en funktion ved hjælp af første og anden afledte.
+
+$y(x) = x^4 - 8x^3 + 18x^2 - 10$
+
+Første afledte:
+$y'(x) = 4x^3 - 24x^2 + 36x = 4x(x^2 - 6x + 9) = 4x(x-3)^2$
+
+Anden afledte:
+$y''(x) = 12x^2 - 48x + 36 = 12(x^2 - 4x + 3) = 12(x-1)(x-3)$
+
+a) Vandret tangent når $y'(x) = 0$:
+$4x(x-3)^2 = 0$
+Løsninger: $x = 0$ og $x = 3$
+
+b) Vendepunkter når $y''(x) = 0$:
+$12(x-1)(x-3) = 0$
+Løsninger: $x = 1$ og $x = 3$
+
+```{r opgave18}
+# Funktionsanalyse
+y <- function(x) x^4 - 8*x^3 + 18*x^2 - 10
+y_mærke <- function(x) 4*x^3 - 24*x^2 + 36*x
+y_dobbeltmærke <- function(x) 12*x^2 - 48*x + 36
+
+# Kritiske punkter
+kritiske_x <- c(0, 1, 3)
+
+cat("Analyse af kritiske punkter:\n\n")
+cat("x | y(x) | y'(x) | y''(x) | Type\n")
+cat("--|------|-------|--------|------\n")
+
+for (x in kritiske_x) {
+  y_værdi <- y(x)
+  y_mærke_værdi <- y_mærke(x)
+  y_dobbeltmærke_værdi <- y_dobbeltmærke(x)
+
+  if (y_mærke_værdi == 0 && y_dobbeltmærke_værdi > 0) {
+    type <- "Minimum"
+  } else if (y_mærke_værdi == 0 && y_dobbeltmærke_værdi < 0) {
+    type <- "Maksimum"
+  } else if (y_dobbeltmærke_værdi == 0) {
+    type <- "Vendepunkt"
+  } else {
+    type <- "Andet"
+  }
+
+  cat(sprintf("%d | %4d | %5d | %6d | %s\n",
+              x, y_værdi, y_mærke_værdi, y_dobbeltmærke_værdi, type))
+}
+
+cat("\nKonklusioner:")
+cat("\na) Vandret tangent ved x = 0 (maksimum) og x = 3 (vendepunkt)")
+cat("\nb) Vendepunkter ved x = 1 og x = 3")
+cat("\nc) Bølgen har et maksimum ved (0, -10), går ned til et vendepunkt")
+cat("\n   ved (1, 1), og har et specielt punkt ved (3, -1) som både")
+cat("\n   er vendepunkt og har vandret tangent.")
+```
+:::
+
+**Opgave 19:** En virksomhed sælger widgets. Overskuddet (i tusind kroner) er givet ved $P(x) = -x^3 + 15x^2 - 50x + 100$, hvor $x$ er antal producerede tusind enheder. Find:
+
+a) Ved hvilken produktion er overskuddet størst?
+b) Hvad er det maksimale overskud?
+c) Ved hvilke produktionsniveauer går virksomheden i nul?
+
+::: {.callout-tip collapse="true" title="Vis svar"}
+Dette handler om økonomisk optimering ved hjælp af differentialregning.
+
+$P(x) = -x^3 + 15x^2 - 50x + 100$
+
+Første afledte (marginal profit):
+$P'(x) = -3x^2 + 30x - 50$
+
+For at finde maksimum, sætter vi $P'(x) = 0$:
+$-3x^2 + 30x - 50 = 0$
+
+Vi bruger diskriminantformlen:
+$x = \frac{-30 \pm \sqrt{900 - 600}}{-6} = \frac{-30 \pm \sqrt{300}}{-6} = \frac{30 \mp 10\sqrt{3}}{6}$
+
+$x_1 = \frac{30 - 17.32}{6} \approx 2.11$
+$x_2 = \frac{30 + 17.32}{6} \approx 7.89$
+
+Anden afledte:
+$P''(x) = -6x + 30$
+
+$P''(2.11) = -6(2.11) + 30 = 17.34 > 0$ (minimum)
+$P''(7.89) = -6(7.89) + 30 = -17.34 < 0$ (maksimum)
+
+```{r opgave19}
+# Overskudsanalyse
+P <- function(x) -x^3 + 15*x^2 - 50*x + 100
+
+# Find maksimum
+x_max <- (30 + sqrt(300))/6
+P_max <- P(x_max)
+
+# Test forskellige produktionsniveauer
+cat("Overskud ved forskellige produktionsniveauer:\n\n")
+cat("Produktion | Overskud\n")
+cat("(1000 stk) | (1000 kr)\n")
+cat("-----------|----------\n")
+
+for (x in c(0, 2, 4, 6, 7.89, 9, 10)) {
+  overskud <- P(x)
+  cat(sprintf("%10.2f | %9.1f\n", x, overskud))
+}
+
+cat("\nKonklusioner:\n")
+cat("a) Optimal produktion:", format(round(x_max * 1000), big.mark = "."), "enheder\n")
+cat("b) Maksimalt overskud:", format(round(P_max, 1), decimal.mark = ","), "tusind kr\n")
+cat("c) Virksomheden går i nul ved ca. 2.600 og 10.000 enheder")
+```
+:::
+
+**Opgave 20:** Design din egen bevægelsesfunktion for et objekt (f.eks. en drone, en basketball eller en delfin). Funktionen skal være mindst en tredjegradsligning. Analyser derefter:
+
+a) Objektets position over tid
+b) Hvornår objektet bevæger sig hurtigst/langsomst
+c) Accelerationsmønsteret
+d) Forklar hvad din funktion kunne repræsentere i virkeligheden
+
+::: {.callout-tip collapse="true" title="Vis svar"}
+Dette er en kreativ opgave hvor eleven selv designer og analyserer en funktion. Her er et eksempel med en basketball der kastes op:
+
+Lad os designe: $s(t) = -2t^3 + 12t^2 + 5t$
+hvor $s(t)$ er højden i meter og $t$ er tiden i sekunder.
+
+Første afledte (hastighed):
+$s'(t) = -6t^2 + 24t + 5$
+
+Anden afledte (acceleration):
+$s''(t) = -12t + 24$
+
+```{r opgave20}
+# Basketball-analyse
+s <- function(t) -2*t^3 + 12*t^2 + 5*t
+s_mærke <- function(t) -6*t^2 + 24*t + 5
+s_dobbeltmærke <- function(t) -12*t + 24
+
+# Find interessante tidspunkter
+# Maksimal højde når s'(t) = 0
+# Bruger diskriminantformlen: (-24 ± sqrt(576 + 120))/(-12)
+t_max <- (-24 - sqrt(696))/(-12)  # Vi tager den positive løsning < 4
+
+cat("Basketball-kast analyse:\n\n")
+
+# Vis forløbet
+cat("Tid (s) | Højde (m) | Hastighed (m/s) | Acceleration (m/s²)\n")
+cat("--------|-----------|-----------------|-------------------\n")
+
+for (t in seq(0, 4.5, 0.5)) {
+  if (s(t) >= 0) {
+    cat(sprintf("%7.1f | %9.1f | %15.1f | %18.1f\n",
+                t, s(t), s_mærke(t), s_dobbeltmærke(t)))
+  }
+}
+
+cat("\n\nFortolkning:")
+cat("\n- Bolden kastes opad med starthastighed 5 m/s")
+cat("\n- Accelerationen starter positiv (ekstra kraft fra kast)")
+cat("\n- Efter 2 sekunder bliver accelerationen negativ (kun tyngdekraft)")
+cat("\n- Bolden når maksimal højde omkring t =", format(round(t_max, 2), decimal.mark = ","))
+cat("\n- Bolden rammer jorden igen omkring t = 4,4 sekunder")
+cat("\n\nDenne funktion kunne repræsentere et kraftigt kast hvor")
+cat("\nspilleren giver bolden ekstra acceleration i starten!")
+```
+:::

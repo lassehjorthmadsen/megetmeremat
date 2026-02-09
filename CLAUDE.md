@@ -58,6 +58,10 @@ Each chapter loads only the packages it needs:
 - Section IDs follow pattern `{#sec-chaptername}` for cross-references
 - Danish language throughout content
 
+### Markdown/Quarto Formatting
+- Always place a blank line before bullet lists or ordered lists, otherwise they won't render correctly
+- This applies to all list types: `- items`, `1. items`, `a) items`
+
 ### Git Workflow
 - Main branch: `main`
 - Auto-deployment via GitHub Pages on push to main

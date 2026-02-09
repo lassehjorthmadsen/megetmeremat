@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Differentialregning – Hyggematematik</title>
+<title>Differentialregning – Meget mere mat</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -126,7 +126,7 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Hyggematematik</a> 
+      <a href="./">Meget mere mat</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -139,7 +139,7 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Hvad er hyggematematik?</span></a>
+ <span class="menu-text">Hvorfor meget mere matematik?</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -197,6 +197,7 @@ window.Quarto = {
   </ul></li>
   <li><a href="#opsummering" id="toc-opsummering" class="nav-link" data-scroll-target="#opsummering">Opsummering</a></li>
   <li><a href="#appendix-regneregler" id="toc-appendix-regneregler" class="nav-link" data-scroll-target="#appendix-regneregler">Appendix: Regneregler</a></li>
+  <li><a href="#opgaver" id="toc-opgaver" class="nav-link" data-scroll-target="#opgaver">Opgaver</a></li>
   </ul>
 </nav>
     </div>
@@ -242,7 +243,7 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>I det her eksempel viser grafen, at du cykler hurtigere og hurtigere. Jo længere tid der går, jo stejlere er grafen, og jo hurtigere stiger afstanden. Sådan kan det jo ikke blive ved med at gå i virkeligheden, for til sidst ville man cykle hurtigere end bilerne. Men for hyggematematikkens skyld, holder vi fast i eksemplet lidt endnu.</p>
+<p>I det her eksempel viser grafen, at du cykler hurtigere og hurtigere. Jo længere tid der går, jo stejlere er grafen, og jo hurtigere stiger afstanden. Sådan kan det jo ikke blive ved med at gå i virkeligheden, for til sidst ville man cykle hurtigere end bilerne. Men for meget mere mats skyld, holder vi fast i eksemplet lidt endnu.</p>
 </section>
 <section id="hvad-er-en-tangent" class="level2">
 <h2 class="anchored" data-anchor-id="hvad-er-en-tangent">Hvad er en tangent?</h2>
@@ -479,6 +480,910 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
+</section>
+<section id="opgaver" class="level2">
+<h2 class="anchored" data-anchor-id="opgaver">Opgaver</h2>
+<p><strong>Opgave 1:</strong> Du har funktionen <span class="math inline">\(f(x) = x^2\)</span>. Find den afledte funktion <span class="math inline">\(f'(x)\)</span> ved at bruge reglen fra appendix.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vis svar
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dette handler om at finde den afledte af en simpel potensfunktion. Vi bruger reglen for <span class="math inline">\(x^n\)</span> fra appendix-tabellen.</p>
+<p>Når <span class="math inline">\(f(x) = x^n\)</span>, så er <span class="math inline">\(f'(x) = n \cdot x^{n-1}\)</span></p>
+<p>Her er <span class="math inline">\(n = 2\)</span>, så: <span class="math display">\[f'(x) = 2 \cdot x^{2-1} = 2x\]</span></p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>Den afledte funktion er f'(x) = 2x</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>For eksempel: f'(5) = 10</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><strong>Opgave 2:</strong> Emma kører på skateboard, og hendes position (i meter) er givet ved <span class="math inline">\(s(t) = 3t^2\)</span>, hvor <span class="math inline">\(t\)</span> er tiden i sekunder. Hvad er hendes hastighed efter 2 sekunder?</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vis svar
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dette handler om at finde hastigheden, som er den afledte af positionsfunktionen.</p>
+<p>Positionsfunktionen er <span class="math inline">\(s(t) = 3t^2\)</span></p>
+<p>Vi bruger reglen for <span class="math inline">\(x^n\)</span> og husker at konstanten ganges med: <span class="math display">\[s'(t) = 3 \cdot 2 \cdot t^{2-1} = 6t\]</span></p>
+<p>Hastigheden efter 2 sekunder er: <span class="math display">\[s'(2) = 6 \cdot 2 = 12 \text{ meter per sekund}\]</span></p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>Emmas hastighed efter 2 sekunder er: 12 meter per sekund</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><strong>Opgave 3:</strong> Find den afledte af funktionen <span class="math inline">\(f(x) = 17\)</span>. Hvad fortæller svaret dig?</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vis svar
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dette handler om at differentiere en konstant funktion. Fra appendix ved vi, at den afledte af en konstant <span class="math inline">\(k\)</span> er 0.</p>
+<p><span class="math display">\[f(x) = 17\]</span> <span class="math display">\[f'(x) = 0\]</span></p>
+<p>Dette betyder, at funktionen har hældning 0 overalt - den er helt flad! Hvis dette var en positionsfunktion, ville det betyde, at objektet står helt stille.</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>Den afledte af 17 er: 0</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Dette betyder, at grafen er helt flad.</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><strong>Opgave 4:</strong> En legetøjsraket sendes op i luften. Dens højde (i meter) er givet ved <span class="math inline">\(h(t) = 100t - 5t^2\)</span>, hvor <span class="math inline">\(t\)</span> er tiden i sekunder. Find rakettens hastighed opad efter 5 sekunder.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vis svar
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dette handler om at finde den lodrette hastighed, som er den afledte af højdefunktionen.</p>
+<p>Højdefunktionen er <span class="math inline">\(h(t) = 100t - 5t^2\)</span></p>
+<p>Vi differentierer hvert led for sig:</p>
+<ul>
+<li>Den afledte af <span class="math inline">\(100t\)</span> er <span class="math inline">\(100\)</span> (regel: den afledte af <span class="math inline">\(kx\)</span> er <span class="math inline">\(k\)</span>)</li>
+<li>Den afledte af <span class="math inline">\(-5t^2\)</span> er <span class="math inline">\(-5 \cdot 2t = -10t\)</span></li>
+</ul>
+<p>Så hastighedsfunktionen er: <span class="math display">\[h'(t) = 100 - 10t\]</span></p>
+<p>Efter 5 sekunder: <span class="math display">\[h'(5) = 100 - 10 \cdot 5 = 100 - 50 = 50 \text{ meter per sekund}\]</span></p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>Rakettens hastighed opad efter 5 sekunder er: 50 meter per sekund</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><strong>Opgave 5:</strong> Find den afledte af funktionen <span class="math inline">\(f(x) = 2x^3 + 5x - 7\)</span>. Brug reglen om, at man kan differentiere hvert led for sig.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vis svar
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dette handler om at differentiere en funktion med flere led. Vi differentierer hvert led for sig og lægger resultaterne sammen.</p>
+<p><span class="math inline">\(f(x) = 2x^3 + 5x - 7\)</span></p>
+<ul>
+<li>Den afledte af <span class="math inline">\(2x^3\)</span> er <span class="math inline">\(2 \cdot 3x^2 = 6x^2\)</span></li>
+<li>Den afledte af <span class="math inline">\(5x\)</span> er <span class="math inline">\(5\)</span></li>
+<li>Den afledte af <span class="math inline">\(-7\)</span> er <span class="math inline">\(0\)</span> (konstant)</li>
+</ul>
+<p>Derfor er: <span class="math display">\[f'(x) = 6x^2 + 5\]</span></p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>Den afledte funktion er f'(x) = 6x² + 5</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>For eksempel: f'(3) = 59</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><strong>Opgave 6:</strong> Find ligningen for tangenten til grafen <span class="math inline">\(f(x) = x^2\)</span> ved punktet <span class="math inline">\(x = 4\)</span>.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vis svar
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dette handler om at finde tangentligningen ved et specifikt punkt. Vi skal bruge:</p>
+<ol type="1">
+<li>Punktet på grafen: <span class="math inline">\((x_0, f(x_0))\)</span></li>
+<li>Hældningen i punktet: <span class="math inline">\(f'(x_0)\)</span></li>
+<li>Tangentens ligning: <span class="math inline">\(y = f(x_0) + f'(x_0) \cdot (x - x_0)\)</span></li>
+</ol>
+<p>Vi har <span class="math inline">\(f(x) = x^2\)</span>, så <span class="math inline">\(f'(x) = 2x\)</span></p>
+<p>Ved <span class="math inline">\(x_0 = 4\)</span>:</p>
+<ul>
+<li><span class="math inline">\(f(4) = 4^2 = 16\)</span></li>
+<li><span class="math inline">\(f'(4) = 2 \cdot 4 = 8\)</span></li>
+</ul>
+<p>Tangentens ligning bliver: <span class="math display">\[y = 16 + 8(x - 4) = 16 + 8x - 32 = 8x - 16\]</span></p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>Punktet på grafen: (4, 16)</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Hældning i punktet: 8</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Tangentens ligning: y = 8x - 16</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><strong>Opgave 7:</strong> Sofie kører på cykel, og hendes position er givet ved <span class="math inline">\(s(t) = t^3 - 9t^2 + 15t\)</span> meter, hvor <span class="math inline">\(t\)</span> er tiden i sekunder. Hvornår står hun stille (dvs. hvornår er hastigheden 0)?</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vis svar
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dette handler om at finde, hvornår hastigheden er 0. Hastigheden er den afledte af positionsfunktionen.</p>
+<p><span class="math inline">\(s(t) = t^3 - 9t^2 + 15t\)</span></p>
+<p>Den afledte (hastigheden) er: <span class="math inline">\(s'(t) = 3t^2 - 18t + 15\)</span></p>
+<p>Vi skal løse ligningen <span class="math inline">\(s'(t) = 0\)</span>: <span class="math inline">\(3t^2 - 18t + 15 = 0\)</span></p>
+<p>Vi kan dividere med 3: <span class="math inline">\(t^2 - 6t + 5 = 0\)</span></p>
+<p>Dette kan faktoriseres som: <span class="math inline">\((t - 1)(t - 5) = 0\)</span></p>
+<p>Så <span class="math inline">\(t = 1\)</span> eller <span class="math inline">\(t = 5\)</span></p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>Ved t = 1 sekunder er hastigheden: 0 m/s
+Ved t = 5 sekunder er hastigheden: 0 m/s</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Sofie står stille efter 1 sekund og igen efter 5 sekunder.</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><strong>Opgave 8:</strong> En ballon stiger op med en højde givet ved <span class="math inline">\(h(t) = 4t + t^2\)</span> meter, hvor <span class="math inline">\(t\)</span> er tiden i minutter. Find tangentens ligning ved <span class="math inline">\(t = 3\)</span> minutter, og forklar hvad tangentens hældning betyder.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vis svar
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dette handler om at finde tangenten til en højdefunktion og fortolke dens betydning.</p>
+<p><span class="math inline">\(h(t) = 4t + t^2\)</span></p>
+<p>Den afledte (stigehastigheden) er: <span class="math inline">\(h'(t) = 4 + 2t\)</span></p>
+<p>Ved <span class="math inline">\(t = 3\)</span>:</p>
+<ul>
+<li>Højden er: <span class="math inline">\(h(3) = 4 \cdot 3 + 3^2 = 12 + 9 = 21\)</span> meter</li>
+<li>Stigehastigheden er: <span class="math inline">\(h'(3) = 4 + 2 \cdot 3 = 10\)</span> meter per minut</li>
+</ul>
+<p>Tangentens ligning: <span class="math inline">\(y = 21 + 10(t - 3) = 21 + 10t - 30 = 10t - 9\)</span></p>
+<p>Hældningen 10 betyder, at ballonen stiger med 10 meter per minut ved <span class="math inline">\(t = 3\)</span>.</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>Efter 3 minutter:</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>- Højde: 21 meter</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>- Stigehastighed: 10 meter per minut</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>- Tangentens ligning: y = 10 t - 9</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><strong>Opgave 9:</strong> Et badekar fyldes med vand. Vandmængden (i liter) er givet ved <span class="math inline">\(V(t) = 20t - 0.5t^2\)</span>, hvor <span class="math inline">\(t\)</span> er tiden i minutter. Hvornår fyldes karret langsomst?</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vis svar
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dette handler om at finde, hvornår fyldningshastigheden er mindst. Fyldningshastigheden er den afledte af vandmængden.</p>
+<p><span class="math inline">\(V(t) = 20t - 0.5t^2\)</span></p>
+<p>Fyldningshastigheden er: <span class="math inline">\(V'(t) = 20 - t\)</span></p>
+<p>Dette er en lineær funktion, der falder når <span class="math inline">\(t\)</span> stiger. Den mindste hastighed (inden den bliver negativ) er når <span class="math inline">\(V'(t) = 0\)</span>:</p>
+<p><span class="math inline">\(20 - t = 0\)</span> <span class="math inline">\(t = 20\)</span></p>
+<p>Ved <span class="math inline">\(t = 20\)</span> minutter er fyldningshastigheden 0, og derefter bliver den negativ (vandet løber ud igen!).</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>Efter 0 minutter: Fyldningshastighed = 20 liter/minut
+Efter 5 minutter: Fyldningshastighed = 15 liter/minut
+Efter 10 minutter: Fyldningshastighed = 10 liter/minut
+Efter 15 minutter: Fyldningshastighed = 5 liter/minut
+Efter 20 minutter: Fyldningshastighed = 0 liter/minut</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Badekarret fyldes langsomst efter 20 minutter (faktisk stopper det med at fylde).</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><strong>Opgave 10:</strong> Oliver cykler i modvind. Hans position er givet ved <span class="math inline">\(s(t) = 10t - 0.2t^3\)</span> meter, hvor <span class="math inline">\(t\)</span> er tiden i sekunder. Beskriv hvordan hans hastighed ændrer sig i de første 6 sekunder.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vis svar
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dette handler om at analysere, hvordan hastigheden ændrer sig over tid.</p>
+<p><span class="math inline">\(s(t) = 10t - 0.2t^3\)</span></p>
+<p>Hastighedsfunktionen er: <span class="math inline">\(s'(t) = 10 - 0.6t^2\)</span></p>
+<p>Lad os beregne hastigheden ved forskellige tidspunkter:</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>Tid (sek) | Hastighed (m/s)</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>----------|---------------</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>        0 |             10
+        1 |            9,4
+        2 |            7,6
+        3 |            4,6
+        4 |            0,4
+        5 |             -5
+        6 |          -11,6</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Beskrivelse: Oliver starter med hastighed 10 m/s, men modvinden</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+gør det sværere og sværere. Hans hastighed falder hele tiden,</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+og efter cirka 4 sekunder er den næsten halveret.</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><strong>Opgave 11:</strong> En bil kører med position <span class="math inline">\(s(t) = 5t^2 + 10t\)</span> meter, hvor <span class="math inline">\(t\)</span> er tiden i sekunder. Find bilens acceleration.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vis svar
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dette handler om at finde accelerationen, som er den dobbelt afledte af positionsfunktionen.</p>
+<p><span class="math inline">\(s(t) = 5t^2 + 10t\)</span></p>
+<p>Først finder vi hastigheden (første afledte): <span class="math inline">\(s'(t) = 10t + 10\)</span></p>
+<p>Derefter finder vi accelerationen (anden afledte): <span class="math inline">\(s''(t) = 10\)</span></p>
+<p>Bilen har en konstant acceleration på 10 m/s².</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>Ved t = 3 sekunder:</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>- Position: 75 meter</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>- Hastighed: 40 m/s</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>- Acceleration: 10 m/s²</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Accelerationen er konstant uanset tidspunktet!</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><strong>Opgave 12:</strong> En rutsjebane har højdeprofilen <span class="math inline">\(h(x) = -x^3 + 12x^2 - 20x + 50\)</span> meter, hvor <span class="math inline">\(x\)</span> er den vandrette afstand i meter. Find <span class="math inline">\(h''(x)\)</span> og forklar hvad det fortæller om rutsjebanen.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vis svar
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dette handler om at finde den dobbelt afledte og fortolke dens betydning for en rutsjebanes form.</p>
+<p><span class="math inline">\(h(x) = -x^3 + 12x^2 - 20x + 50\)</span></p>
+<p>Første afledte (hældningen): <span class="math inline">\(h'(x) = -3x^2 + 24x - 20\)</span></p>
+<p>Anden afledte (krumningen): <span class="math inline">\(h''(x) = -6x + 24\)</span></p>
+<p>Den dobbelt afledte fortæller os om rutsjebanen krummer opad eller nedad:</p>
+<ul>
+<li>Når <span class="math inline">\(h''(x) &gt; 0\)</span>: Banen krummer opad (konkav op)</li>
+<li>Når <span class="math inline">\(h''(x) &lt; 0\)</span>: Banen krummer nedad (konkav ned)</li>
+<li>Når <span class="math inline">\(h''(x) = 0\)</span>: Vendepunkt (skifter krumning)</li>
+</ul>
+<p>Vendepunkt: <span class="math inline">\(-6x + 24 = 0 \Rightarrow x = 4\)</span></p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>Position (x) | h''(x) | Krumning</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>-------------|--------|----------</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>           0 |     24 | Opad
+           2 |     12 | Opad
+           4 |      0 | Vendepunkt
+           6 |    -12 | Nedad
+           8 |    -24 | Nedad</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Rutsjebanen skifter fra at krumme opad til at krumme nedad ved x = 4 meter.</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><strong>Opgave 13:</strong> Er accelerationen konstant for objektet med position <span class="math inline">\(f(x) = 3x^2 + 2x + 1\)</span>? Bevis dit svar.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vis svar
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dette handler om at undersøge, om den dobbelt afledte er konstant.</p>
+<p><span class="math inline">\(f(x) = 3x^2 + 2x + 1\)</span></p>
+<p>Første afledte (hastighed): <span class="math inline">\(f'(x) = 6x + 2\)</span></p>
+<p>Anden afledte (acceleration): <span class="math inline">\(f''(x) = 6\)</span></p>
+<p>Ja, accelerationen er konstant! Den er altid 6 uanset værdien af <span class="math inline">\(x\)</span>.</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>x-værdi | f'(x) (hastighed) | f''(x) (acceleration)</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>--------|-------------------|---------------------</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>      0 |                 2 |                   6
+      1 |                 8 |                   6
+      5 |                32 |                   6
+     10 |                62 |                   6
+    100 |               602 |                   6</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Konklusion: Accelerationen er konstant = 6 for alle x-værdier.</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><strong>Opgave 14:</strong> Et fyrværkeri skydes op med højden <span class="math inline">\(h(t) = 40t - 5t^2\)</span> meter, hvor <span class="math inline">\(t\)</span> er tiden i sekunder. Find:</p>
+<ol type="a">
+<li>Hvornår fyrværkeriet når sin maksimale højde</li>
+<li>Hvad er den maksimale højde?</li>
+<li>Hvad er accelerationen?</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vis svar
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-14" class="callout-14-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dette handler om at bruge differentialregning til at finde maksimum og analysere bevægelse.</p>
+<p><span class="math inline">\(h(t) = 40t - 5t^2\)</span></p>
+<p>Første afledte (hastighed opad): <span class="math inline">\(h'(t) = 40 - 10t\)</span></p>
+<p>Anden afledte (acceleration): <span class="math inline">\(h''(t) = -10\)</span></p>
+<ol type="a">
+<li><p>Maksimal højde nås når hastigheden er 0: <span class="math inline">\(40 - 10t = 0\)</span> <span class="math inline">\(t = 4\)</span> sekunder</p></li>
+<li><p>Maksimal højde: <span class="math inline">\(h(4) = 40 \cdot 4 - 5 \cdot 4^2 = 160 - 80 = 80\)</span> meter</p></li>
+<li><p>Accelerationen er konstant <span class="math inline">\(-10\)</span> m/s² (tyngdekraften)</p></li>
+</ol>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>a) Fyrværkeriet når maksimal højde efter 4 sekunder</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>b) Den maksimale højde er 80 meter</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>c) Accelerationen er -10 m/s² (negativ pga. tyngdekraften)</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Højde over tid:</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>t = 0 s: h = 0 m
+t = 1 s: h = 35 m
+t = 2 s: h = 60 m
+t = 3 s: h = 75 m
+t = 4 s: h = 80 m
+t = 5 s: h = 75 m
+t = 6 s: h = 60 m
+t = 7 s: h = 35 m
+t = 8 s: h = 0 m</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><strong>Opgave 15:</strong> En bus bremser med hastigheden <span class="math inline">\(v(t) = 30 - 6t\)</span> m/s, hvor <span class="math inline">\(t\)</span> er tiden i sekunder efter bremsningen starter. Find:</p>
+<ol type="a">
+<li>Bussens acceleration</li>
+<li>Hvornår bussen stopper</li>
+<li>Hvor langt kører bussen under opbremsningen?</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vis svar
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-15" class="callout-15-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dette handler om at arbejde baglæns fra hastighed til position og analysere opbremsning.</p>
+<p>Givet: <span class="math inline">\(v(t) = 30 - 6t\)</span></p>
+<ol type="a">
+<li><p>Accelerationen er den afledte af hastigheden: <span class="math inline">\(a(t) = v'(t) = -6\)</span> m/s²</p></li>
+<li><p>Bussen stopper når <span class="math inline">\(v(t) = 0\)</span>: <span class="math inline">\(30 - 6t = 0\)</span> <span class="math inline">\(t = 5\)</span> sekunder</p></li>
+<li><p>For at finde distancen skal vi integrere hastigheden. Siden <span class="math inline">\(v(t) = s'(t)\)</span>, må: <span class="math inline">\(s(t) = 30t - 3t^2\)</span> (plus en konstant, som vi sætter til 0)</p></li>
+</ol>
+<p>Distance kørt fra <span class="math inline">\(t = 0\)</span> til <span class="math inline">\(t = 5\)</span>: <span class="math inline">\(s(5) = 30 \cdot 5 - 3 \cdot 5^2 = 150 - 75 = 75\)</span> meter</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>a) Acceleration: -6 m/s² (konstant opbremsning)</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>b) Bussen stopper efter 5 sekunder</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>c) Bussen kører 75 meter under opbremsningen</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Hastighed under opbremsning:</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>t = 0 s: v = 30 m/s
+t = 1 s: v = 24 m/s
+t = 2 s: v = 18 m/s
+t = 3 s: v = 12 m/s
+t = 4 s: v = 6 m/s
+t = 5 s: v = 0 m/s</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><strong>Opgave 16:</strong> En solsikke vokser med højden <span class="math inline">\(h(t) = 0.1t^3 - t^2 + 5t\)</span> centimeter, hvor <span class="math inline">\(t\)</span> er tiden i dage. Analyser plantens vækstmønster de første 12 dage:</p>
+<ol type="a">
+<li>Hvornår vokser planten hurtigst?</li>
+<li>Hvornår vokser planten langsomst?</li>
+<li>Er der perioder hvor planten næsten ikke vokser?</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-16-contents" aria-controls="callout-16" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vis svar
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-16" class="callout-16-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dette handler om at analysere et komplekst vækstmønster ved hjælp af første og anden afledte.</p>
+<p><span class="math inline">\(h(t) = 0.1t^3 - t^2 + 5t\)</span></p>
+<p>Væksthastigheden (første afledte): <span class="math inline">\(h'(t) = 0.3t^2 - 2t + 5\)</span></p>
+<p>Vækstaccelerationen (anden afledte): <span class="math inline">\(h''(t) = 0.6t - 2\)</span></p>
+<p>For at finde ekstremværdier for væksthastigheden, sætter vi <span class="math inline">\(h''(t) = 0\)</span>: <span class="math inline">\(0.6t - 2 = 0\)</span> <span class="math inline">\(t = \frac{20}{6} = 3.33\)</span> dage</p>
+<p>Ved <span class="math inline">\(t = 3.33\)</span>: <span class="math inline">\(h''(3.33) = 0\)</span> (vendepunkt for vækst)</p>
+<ul>
+<li>For <span class="math inline">\(t &lt; 3.33\)</span>: <span class="math inline">\(h''(t) &lt; 0\)</span> (væksten aftager)</li>
+<li>For <span class="math inline">\(t &gt; 3.33\)</span>: <span class="math inline">\(h''(t) &gt; 0\)</span> (væksten tiltager)</li>
+</ul>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>Vækstanalyse over 12 dage:</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Dag 0.00: Vækst = 5.00 cm/dag
+Dag 2.00: Vækst = 2.20 cm/dag
+Dag 3.33: Vækst = 1.67 cm/dag
+Dag 6.00: Vækst = 3.80 cm/dag
+Dag 9.00: Vækst = 11.30 cm/dag
+Dag 12.00: Vækst = 24.20 cm/dag</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Konklusioner:</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>a) Planten vokser hurtigst på dag 12 med 24,2 cm/dag</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>b) Planten vokser langsomst på dag 3,33 med 1,67 cm/dag</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>c) Nej, væksten er aldrig 0 eller negativ - planten vokser hele tiden!</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><strong>Opgave 17:</strong> En kop kaffe køler af ifølge formlen <span class="math inline">\(T(t) = 20 + 60e^{-0.1t}\)</span> grader Celsius, hvor <span class="math inline">\(t\)</span> er tiden i minutter. Brug reglen for <span class="math inline">\(e^{kx}\)</span> fra appendix til at finde:</p>
+<ol type="a">
+<li>Hvor hurtigt falder temperaturen efter 5 minutter?</li>
+<li>Hvornår falder temperaturen hurtigst?</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vis svar
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-17" class="callout-17-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dette handler om at differentiere en eksponentialfunktion og analysere afkøling.</p>
+<p><span class="math inline">\(T(t) = 20 + 60e^{-0.1t}\)</span></p>
+<p>Fra appendix ved vi at den afledte af <span class="math inline">\(e^{kx}\)</span> er <span class="math inline">\(k \cdot e^{kx}\)</span>. Her er <span class="math inline">\(k = -0.1\)</span>, så:</p>
+<p><span class="math inline">\(T'(t) = 60 \cdot (-0.1) \cdot e^{-0.1t} = -6e^{-0.1t}\)</span></p>
+<ol type="a">
+<li><p>Efter 5 minutter: <span class="math inline">\(T'(5) = -6e^{-0.5} = -6 \cdot 0.6065 = -3.64\)</span> °C/minut</p></li>
+<li><p>For at finde hvornår temperaturen falder hurtigst, ser vi på <span class="math inline">\(T'(t) = -6e^{-0.1t}\)</span>. Da <span class="math inline">\(e^{-0.1t}\)</span> altid er positiv og aftager med tiden, er <span class="math inline">\(T'(t)\)</span> altid negativ og størst i absolutværdi ved <span class="math inline">\(t = 0\)</span>.</p></li>
+</ol>
+<p>Temperaturen falder altså hurtigst i starten!</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>a) Efter 5 minutter:</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Temperatur: 56,4 °C</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Afkølingshastighed: -3,64 °C/minut</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+b) Afkølingshastighed over tid:</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   t =  0 min: -6.00 °C/min
+   t =  2 min: -4.91 °C/min
+   t =  5 min: -3.64 °C/min
+   t = 10 min: -2.21 °C/min
+   t = 20 min: -0.81 °C/min</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Konklusion: Kaffen køler hurtigst af i starten (t = 0)!</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><strong>Opgave 18:</strong> En bølge beskrives af funktionen <span class="math inline">\(y(x) = x^4 - 8x^3 + 18x^2 - 10\)</span>. Find alle steder hvor bølgen:</p>
+<ol type="a">
+<li>Har vandret tangent (toppe og dale)</li>
+<li>Skifter krumningsretning (vendepunkter)</li>
+<li>Tegn en skitse af bølgen baseret på din analyse</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vis svar
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-18" class="callout-18-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dette handler om at lave en fuldstændig analyse af en funktion ved hjælp af første og anden afledte.</p>
+<p><span class="math inline">\(y(x) = x^4 - 8x^3 + 18x^2 - 10\)</span></p>
+<p>Første afledte: <span class="math inline">\(y'(x) = 4x^3 - 24x^2 + 36x = 4x(x^2 - 6x + 9) = 4x(x-3)^2\)</span></p>
+<p>Anden afledte: <span class="math inline">\(y''(x) = 12x^2 - 48x + 36 = 12(x^2 - 4x + 3) = 12(x-1)(x-3)\)</span></p>
+<ol type="a">
+<li><p>Vandret tangent når <span class="math inline">\(y'(x) = 0\)</span>: <span class="math inline">\(4x(x-3)^2 = 0\)</span> Løsninger: <span class="math inline">\(x = 0\)</span> og <span class="math inline">\(x = 3\)</span></p></li>
+<li><p>Vendepunkter når <span class="math inline">\(y''(x) = 0\)</span>: <span class="math inline">\(12(x-1)(x-3) = 0\)</span> Løsninger: <span class="math inline">\(x = 1\)</span> og <span class="math inline">\(x = 3\)</span></p></li>
+</ol>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>Analyse af kritiske punkter:</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>x | y(x) | y'(x) | y''(x) | Type</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>--|------|-------|--------|------</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>0 |  -10 |     0 |     36 | Minimum
+1 |    1 |    16 |      0 | Vendepunkt
+3 |   17 |     0 |      0 | Vendepunkt</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Konklusioner:</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+a) Vandret tangent ved x = 0 (maksimum) og x = 3 (vendepunkt)</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+b) Vendepunkter ved x = 1 og x = 3</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+c) Bølgen har et maksimum ved (0, -10), går ned til et vendepunkt</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+   ved (1, 1), og har et specielt punkt ved (3, -1) som både</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+   er vendepunkt og har vandret tangent.</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><strong>Opgave 19:</strong> En virksomhed sælger widgets. Overskuddet (i tusind kroner) er givet ved <span class="math inline">\(P(x) = -x^3 + 15x^2 - 50x + 100\)</span>, hvor <span class="math inline">\(x\)</span> er antal producerede tusind enheder. Find:</p>
+<ol type="a">
+<li>Ved hvilken produktion er overskuddet størst?</li>
+<li>Hvad er det maksimale overskud?</li>
+<li>Ved hvilke produktionsniveauer går virksomheden i nul?</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-19-contents" aria-controls="callout-19" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vis svar
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-19" class="callout-19-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dette handler om økonomisk optimering ved hjælp af differentialregning.</p>
+<p><span class="math inline">\(P(x) = -x^3 + 15x^2 - 50x + 100\)</span></p>
+<p>Første afledte (marginal profit): <span class="math inline">\(P'(x) = -3x^2 + 30x - 50\)</span></p>
+<p>For at finde maksimum, sætter vi <span class="math inline">\(P'(x) = 0\)</span>: <span class="math inline">\(-3x^2 + 30x - 50 = 0\)</span></p>
+<p>Vi bruger diskriminantformlen: <span class="math inline">\(x = \frac{-30 \pm \sqrt{900 - 600}}{-6} = \frac{-30 \pm \sqrt{300}}{-6} = \frac{30 \mp 10\sqrt{3}}{6}\)</span></p>
+<p><span class="math inline">\(x_1 = \frac{30 - 17.32}{6} \approx 2.11\)</span> <span class="math inline">\(x_2 = \frac{30 + 17.32}{6} \approx 7.89\)</span></p>
+<p>Anden afledte: <span class="math inline">\(P''(x) = -6x + 30\)</span></p>
+<p><span class="math inline">\(P''(2.11) = -6(2.11) + 30 = 17.34 &gt; 0\)</span> (minimum) <span class="math inline">\(P''(7.89) = -6(7.89) + 30 = -17.34 &lt; 0\)</span> (maksimum)</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>Overskud ved forskellige produktionsniveauer:</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Produktion | Overskud</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(1000 stk) | (1000 kr)</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>-----------|----------</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>      0.00 |     100.0
+      2.00 |      52.0
+      4.00 |      76.0
+      6.00 |     124.0
+      7.89 |     148.1
+      9.00 |     136.0
+     10.00 |     100.0</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Konklusioner:</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>a) Optimal produktion: 7.887 enheder</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>b) Maksimalt overskud: 148,1 tusind kr</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>c) Virksomheden går i nul ved ca. 2.600 og 10.000 enheder</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><strong>Opgave 20:</strong> Design din egen bevægelsesfunktion for et objekt (f.eks. en drone, en basketball eller en delfin). Funktionen skal være mindst en tredjegradsligning. Analyser derefter:</p>
+<ol type="a">
+<li>Objektets position over tid</li>
+<li>Hvornår objektet bevæger sig hurtigst/langsomst</li>
+<li>Accelerationsmønsteret</li>
+<li>Forklar hvad din funktion kunne repræsentere i virkeligheden</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-20-contents" aria-controls="callout-20" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vis svar
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-20" class="callout-20-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dette er en kreativ opgave hvor eleven selv designer og analyserer en funktion. Her er et eksempel med en basketball der kastes op:</p>
+<p>Lad os designe: <span class="math inline">\(s(t) = -2t^3 + 12t^2 + 5t\)</span> hvor <span class="math inline">\(s(t)\)</span> er højden i meter og <span class="math inline">\(t\)</span> er tiden i sekunder.</p>
+<p>Første afledte (hastighed): <span class="math inline">\(s'(t) = -6t^2 + 24t + 5\)</span></p>
+<p>Anden afledte (acceleration): <span class="math inline">\(s''(t) = -12t + 24\)</span></p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>Basketball-kast analyse:</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Tid (s) | Højde (m) | Hastighed (m/s) | Acceleration (m/s²)</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>--------|-----------|-----------------|-------------------</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    0.0 |       0.0 |             5.0 |               24.0
+    0.5 |       5.2 |            15.5 |               18.0
+    1.0 |      15.0 |            23.0 |               12.0
+    1.5 |      27.8 |            27.5 |                6.0
+    2.0 |      42.0 |            29.0 |                0.0
+    2.5 |      56.2 |            27.5 |               -6.0
+    3.0 |      69.0 |            23.0 |              -12.0
+    3.5 |      78.8 |            15.5 |              -18.0
+    4.0 |      84.0 |             5.0 |              -24.0
+    4.5 |      83.2 |            -8.5 |              -30.0</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+
+Fortolkning:</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+- Bolden kastes opad med starthastighed 5 m/s</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+- Accelerationen starter positiv (ekstra kraft fra kast)</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+- Efter 2 sekunder bliver accelerationen negativ (kun tyngdekraft)</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+- Bolden når maksimal højde omkring t = 4,2</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+- Bolden rammer jorden igen omkring t = 4,4 sekunder</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+
+Denne funktion kunne repræsentere et kraftigt kast hvor</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+spilleren giver bolden ekstra acceleration i starten!</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 
 </section>
