@@ -101,7 +101,7 @@ window.Quarto = {
 
 </head>
 
-<body class="nav-sidebar floating quarto-light">
+<body class="nav-sidebar floating slimcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -138,7 +138,7 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Hvorfor meget mere mat?</span></a>
+ <span class="menu-text">Hvorfor meget mere matematik?</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -187,7 +187,11 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#ordnet-med-tilbagelægning" id="toc-ordnet-med-tilbagelægning" class="nav-link" data-scroll-target="#ordnet-med-tilbagelægning">Ordnet, med tilbagelægning</a></li>
   <li><a href="#ordnet-uden-tilbagelægning" id="toc-ordnet-uden-tilbagelægning" class="nav-link" data-scroll-target="#ordnet-uden-tilbagelægning">Ordnet, uden tilbagelægning</a></li>
+  <li><a href="#uordnet-uden-tilbagelægning" id="toc-uordnet-uden-tilbagelægning" class="nav-link" data-scroll-target="#uordnet-uden-tilbagelægning">Uordnet, uden tilbagelægning</a></li>
+  <li><a href="#uordnet-med-tilbagelægning" id="toc-uordnet-med-tilbagelægning" class="nav-link" data-scroll-target="#uordnet-med-tilbagelægning">Uordnet, med tilbagelægning</a></li>
   </ul></li>
+  <li><a href="#overblik" id="toc-overblik" class="nav-link" data-scroll-target="#overblik">Overblik</a></li>
+  <li><a href="#modsatte-vej" id="toc-modsatte-vej" class="nav-link" data-scroll-target="#modsatte-vej">Modsatte vej</a></li>
   <li><a href="#tælletræet" id="toc-tælletræet" class="nav-link" data-scroll-target="#tælletræet">Tælletræet</a></li>
   <li><a href="#kast-med-to-terninger" id="toc-kast-med-to-terninger" class="nav-link" data-scroll-target="#kast-med-to-terninger">Kast med to terninger</a></li>
   <li><a href="#opgaver" id="toc-opgaver" class="nav-link" data-scroll-target="#opgaver">Opgaver</a></li>
@@ -195,7 +199,7 @@ window.Quarto = {
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -223,24 +227,24 @@ window.Quarto = {
 <ul>
 <li><p>På hvor mange måder kan man vælge én elevrepræsentant fra en klasse med 25 elever? (Svaret er <span class="math inline">\(25\)</span>, og det er okay, hvis du synes, det var lovlig nemt.)</p></li>
 <li><p>Hvis jeg på en restaurant kan vælge mellem tre forskellige forretter, tre forskellige hovedretter og tre forskellige desserter, på hvor mange måder kan jeg så sammensætte en menu? (Svaret er <span class="math inline">\(3 \cdot 3 \cdot 3 = 27\)</span>)</p></li>
-<li><p>På hvor mange måde kan man vælge et festudvalg på tre personer fra en klasse med 25 elever? (Svaret er <span class="math inline">\(25 \cdot 24 \cdot 23 = 13800\)</span>, og det er okay, hvis du syntes, det var lidt svært.)</p></li>
-<li><p>Hvor mange forskellige pokerhænder findes der, hvis vi ved, at en hånd består af 5 kort trukket fra et spil med 52 kort? (Svaret er <span class="math inline">\(2.598.960\)</span> og det er ret svært at regne ud – men når du er færdig med kapitlet her, er det faktisk ikke <em>så</em> svært.)</p></li>
+<li><p>På hvor mange måder kan man vælge et festudvalg på tre personer fra en klasse med 25 elever? (Svaret er 2.300, og det er <em>lidt</em> svært at regne ud, men hæng på, vi kigger på det om lidt.)</p></li>
+<li><p>Hvor mange forskellige pokerhænder findes der, hvis vi ved, at en hånd består af 5 kort trukket fra et spil med 52 kort? (Svaret er 2.598.960 og det er <em>ret</em> svært at regne ud – men når du er færdig med kapitlet her, er det faktisk ikke <em>så</em> svært.)</p></li>
 </ul>
 </section>
 <section id="begreberne" class="level2">
 <h2 class="anchored" data-anchor-id="begreberne">Begreberne</h2>
-<p>Som med meget matematik er en stor del af tricket i kombinatorik at være skarp på, <em>præcist</em> hvad der menes i en eller anden opgave eller problem. Når vi vælger ting, bruger vi for eksempel begreberne <em>med</em> og <em>uden</em> tilbagelægning. Og vi taler om valg, som er <em>ordnet</em> eller <em>uordnet</em>. Hvad betyder det så?</p>
+<p>Som med meget matematik er en stor del af tricket i kombinatorik at være skarp på, <em>præcist</em> hvad der menes i et eller andet problem. Når vi vælger ting, bruger vi for eksempel begreberne <em>med</em> og <em>uden</em> tilbagelægning. Og vi taler om valg, som er <em>ordnet</em> eller <em>uordnet</em>. Hvad betyder det så?</p>
 <ul>
-<li><p><em>Med tilbagelægning</em>: Det kalder vi det, når vi kan vælge den samme ting flere gange. I nogle tilfælde er det helt klart, om det er med eller uden tilbagelægning: Vi kan for eksempel ikke vælge den samme person til festudvalget to gange. Men når vi blander fredagsslik, kan vi godt tage to stykker af vores yndlingsvingummi. Hvis vi er på restaurant er det lidt mere usikkert hvad reglerne er: Vi kan nok godt få lov til at vælge en dessert både som forret, hovedret og dessert, men det er ikke så almindeligt, og normalt tager vi én forret, én hovedret og én dessert.</p></li>
-<li><p><em>Uden tilbagelægning</em>: Det er når vi <em>ikke</em> kan vælge den samme ting flere gange. Vi nævnte festudvalge før, hvor hver person kun kan være med én gang. Det samme gælder for et fodboldhold, der kan kun være én Lionel Messi på holdet. Hvis du laver en hitliste over dine fem yndlingsmusikere, mener vi normalt også fem <em>forskellige</em>, du kan ikke have Taylor Swift på både 1., 2., 3., 4., og 5. pladsen.</p></li>
+<li><p><em>Med tilbagelægning</em>: Det kalder vi det, når vi kan vælge den samme ting flere gange. I nogle tilfælde er det helt klart, om det er med eller uden tilbagelægning. Når vi blander fredagsslik, kan vi godt tage to stykker af vores yndlingsvingummi. Hvis vi er på restaurant er det lidt mere usikkert hvad reglerne er: Vi kan nok godt få lov til at vælge en dessert både som forret, hovedret og dessert, men det er ikke så almindeligt, og normalt tager vi én forret, én hovedret og én dessert.</p></li>
+<li><p><em>Uden tilbagelægning</em>: Det er når vi <em>ikke</em> kan vælge den samme ting flere gange. Vi kan for eksempel kun vælge den samme person fra en klasse til festudvalget én gang. Det samme gælder for et fodboldhold, der kan kun være én Lionel Messi på holdet. Hvis du laver en hitliste over dine fem yndlingsmusikere, mener vi normalt også fem <em>forskellige</em>, du kan ikke have Taylor Swift på både 1., 2., 3., 4., og 5. pladsen.</p></li>
 <li><p><em>Ordnet</em>: Handler om, hvorvidt <em>rækkefølgen</em> betyder noget. På hitlisten gør det (normalt) en forskel hvem der ligger nummer 1, og hvem der ligger nummer 5. Hvis man sætter hold til en landskamp betyder det noget om man er på holdet eller ej, men ikke noget om træneren har valgt én som den første eller sidste. (Det er lidt anderledes, hvis man med holdopstilling også mener, hvem der spiller hvilken <em>position</em>. Det er derfor det er vigtigt at være skarp på, hvad man <em>præcist</em> mener, både når man stiller en matematikopgave og når man løser den.)</p></li>
 <li><p><em>Uordnet</em>: Det kalder vi det, når rækkefølgen <em>ikke</em> betyder noget. Hvis du blander slik, betyder det for eksempel ikke noget, hvilken rækkefølge du vælger slikket i – det bliver jo alligvel rystet sammen hulter til bulter i posen.</p></li>
 </ul>
-<p>Vi kan lave en oversigt over begreberne i et skema som det her:</p>
+<p>Vi kan lave en oversigt over begreberne, med eksempler, i et skema som det her:</p>
 <table class="caption-top table">
 <caption>Fire typer af problemer i kombinatorik</caption>
 <colgroup>
-<col style="width: 34%">
+<col style="width: 33%">
 <col style="width: 33%">
 <col style="width: 33%">
 </colgroup>
@@ -266,10 +270,10 @@ window.Quarto = {
 </table>
 <p><br>
 Af skemaet kan vi se, at der på denne måde er i alt fire typer af problemer.</p>
-<p>Kombinationslåsen er hvis man for eksempel vil vide, hvor mange mulige koder der på en lås med fire cifre fra 0-9. Rækkefølgen betyder noget, fordi koden 1234 ikke er det samme som 4321. Derfor er valget af kode <em>ordnet</em>. Og det er <em>med</em> tilbagelægning fordi det godt kan lade sig gøre at vælge det sammme ciffer flere gange; man kan altså godt have koden 1219.</p>
-<p>Bland-selv-slik, hitlisten og lotto-tallene er <em>eksempler</em> på de tre andre forskellige typer af problemer fra kombinatorikken.</p>
+<p>Kombinationslåsen er hvis man for eksempel vil vide, hvor mange mulige koder der på en lås med fire cifre fra 0-9. Rækkefølgen betyder noget, fordi koden 1234 ikke er det samme som 4321. Derfor er valget af kode <em>ordnet</em>. Og det er <em>med</em> tilbagelægning fordi det godt kan lade sig gøre at vælge det samme ciffer flere gange; man kan altså godt have koden 1219.</p>
+<p>Bland-selv-slik, hitlisten og lotto-tallene er eksempler på de tre andre forskellige typer af problemer fra kombinatorikken.</p>
 </section>
-<section id="formlerne" class="level2">
+<section id="formlerne" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="formlerne">Formlerne</h2>
 <p>Lad os se på, <em>hvordan</em> vi finder løsningen, når vi først har fundet ud af hvilket <em>type</em> problem vi har med at gøre.</p>
 <section id="ordnet-med-tilbagelægning" class="level3">
@@ -281,25 +285,106 @@ Af skemaet kan vi se, at der på denne måde er i alt fire typer af problemer.</
 <p>Hvis der var <em>tre</em> ringe, ville tredje ring også have 10 muligheder, for <em>hver</em> af de 100 muligheder på de to første ringe. Derfor skulle vi gange med 10 en gang til, for at finde det samlede antal kombinationer: <span class="math inline">\(10 \cdot 10 \cdot 10 = 10^3 = 1000\)</span>.</p>
 <p>Du kan måske godt se, hvad der sker, når vi har fire ringe? Jep, vi ganger med 10 en gang til: <span class="math inline">\(10 \cdot 10 \cdot 10 \cdot 10 = 10^4 = 10.000\)</span></p>
 <p>Så en cykellås med 10 cifre på hver af fire ringe, har 10.000 mulige kombinationer. Hvis det tager i gennemsnit 2 sekunder for en cykeltyv at prøve en kombination, tager det i alt 20.000 sekunder at prøve alle kombinationer. Det er det samme som <span class="math inline">\(\frac{2000}{60\ sekunder} \approx 333\ minutter\)</span> eller <span class="math inline">\(\frac{\frac{2000}{60\ sekunder}}{60} \approx 6\ timer\)</span></p>
-<p>Tyven skal selvfølgelig være heldig at finde den rigtige kombination hurtigere, men det tager altså stadigvæk næsten 3 timer at nå bare halvdelen af alle mulige kombinationer.</p>
-<p>Det er derfor, de fleste cykeltyve løfter cyklen op i en bil og klipper låsen op med en boltsaks. Det også derfor, der ikke findes cykellåse med kun én ring og 10 kombinationer.</p>
+<p>Tyven kan selvfølgelig være heldig at finde den rigtige kombination hurtigere, men det tager altså stadigvæk næsten 3 timer at nå bare halvdelen af alle mulige kombinationer.</p>
+<p>Det er derfor, de fleste cykeltyve løfter cyklen op i en bil og klipper låsen op med en boltsaks. Det er også derfor, der ikke findes cykellåse med kun én ring og 10 kombinationer.</p>
 <p>Matematik handler om at løse ting <em>generelt</em>. Det betyder, at vi ikke nødvendigvis er interesserede i cykellåse med netop 4 ringe og netop 10 cifre på hver ring. Lad os sige, at vi står med en lås der har <span class="math inline">\(n\)</span> ringe og <span class="math inline">\(k\)</span> cifre på hver ring. Det samlede antal kombinationer er så bare: <span class="math inline">\(n^k\)</span></p>
-<p>For “vores” cykellås fra før, var <span class="math inline">\(n=10\)</span> og <span class="math inline">\(k=4\)</span> og vi fandt derfor <span class="math inline">\(10^4=10.000\)</span> mulige kombinationer.</p>
-<p>Hvis vi havde haft en lås med <em>tre</em> ringe og bogstaver i stedet for tal, ville der havde været <span class="math inline">\(29^3 = 24.389\)</span> forskellige kombinationer, fordi der findes 29 bogstaver (når vi tæller æ, ø og å med).</p>
-<p>Hvis man både kunne bruge store og små bogstaver ville der være <span class="math inline">\(2 \cdot 29 = 58\)</span> bogstaver at vælge imellem og antallet af kombinationer ville være meget større: <span class="math inline">\(58^3 = 195.112\)</span></p>
-<p>Hvad nu hvis vi designede en lås beregnet til folk, som ikke kan læse tal og bogstaver, og vi i stedet brugte farver? Vi ville nok ikke have lyst til alt for mange farver, for så ville de minde for meget om hinanden. Lad os sige, vi ville lave en lås, hvor hver ring havde fire farvemuligheder: Rød, grøn, gul og blå.</p>
-<p>Hvor mange ringe skulle vi have, for at få mindst 10.000 kombinationer, ligesom i det første eksempel? Lad os prøve med en ligning:</p>
-<p><span class="math inline">\(4^k &gt; 10000\)</span></p>
-<p>Hvor <span class="math inline">\(k\)</span> er antallet af ringe. Den type ligning lærte vi at løse i kapitlet <a href="logaritmer.html#sec-logaritmer" class="quarto-xref"><span>Hvad er logaritmefunktioner?</span></a>. Kort fortalt er tricket bare at tage logaritmen på begge sider:</p>
-<p><span class="math inline">\(log(4^k) &gt; log(10000)\)</span></p>
-<p>Herfra kan vi bruge regnereglen, <span class="math inline">\(log(x^n) = n \cdot log(x)\)</span> og få:</p>
-<p><span class="math inline">\(k \cdot log(4) &gt; log(10000)\)</span></p>
-<p>Flytter vi lidt rundt og bruger lommeregneren finder vi:</p>
-<p><span class="math inline">\(k  &gt; \frac{log(10000)}{log(4)} &gt; 6{,}6\)</span></p>
-<p>En lås med fire farver skal altså have syv ringe får at nå op på mere end 10,000 kombinationer. (Vi kan hurtigt tjekke hvor mange kombinationer det giver, sådan her: <span class="math inline">\(4^7 = 16.384\)</span>. Vi kan også tjekke, at 6 ringe ikke havde været nok: <span class="math inline">\(4^6 = 4096\)</span>)</p>
+<p>For vores cykellås fra før, var <span class="math inline">\(n=10\)</span> og <span class="math inline">\(k=4\)</span> og vi fandt derfor <span class="math inline">\(10^4=10.000\)</span> mulige kombinationer.</p>
+<p>Hvis vi havde haft en lås med <em>tre</em> ringe og bogstaver i stedet for tal, ville der have været <span class="math inline">\(29^3 = 24.389\)</span> forskellige kombinationer, fordi der findes 29 bogstaver (når vi tæller æ, ø og å med).</p>
+<p>Hvis man både kunne bruge store og små bogstaver ville der være <span class="math inline">\(2 \cdot 29 = 58\)</span> bogstaver at vælge imellem og antallet af kombinationer ville være meget større: <span class="math inline">\(58^3 = 195.112\)</span>.</p>
 </section>
 <section id="ordnet-uden-tilbagelægning" class="level3">
 <h3 class="anchored" data-anchor-id="ordnet-uden-tilbagelægning">Ordnet, uden tilbagelægning</h3>
+<p>Hvad nu hvis man ikke måtte bruge hvert tal mere end én gang på kombinationslåsen? Den situation opstår, hvis man for eksempel sammensætter et fodboldhold, eller et elevråd, eller en hitliste med yndlingsmusikere. For en fodboldspiller kan kun blive udtaget én gang, en elev bliver kun valgt én gang til elevrådet, og Taylor Swift kan ikke både være på 1. og 2. pladsen over yndlingssangere.</p>
+<p>Lad os sige at 10 sportsfolk konkurrer hvem der kan springe længst. Der skal uddeles en guld-, sølv- og bronchemedalje. Hvor mange måder kan konkurrencen ende på?</p>
+<p>Guldmedaljen kan vindes af <span class="math inline">\(10\)</span> forskellige personer. Herefter er der <span class="math inline">\(9\)</span> personer tilbage til at vinde sølvmedaljen. Og til sidst er der <span class="math inline">\(8\)</span> tilbage som kan vinde broncemedaljen. Hvis vi bruger samme multiplikationsprincip som før, kan vi se, at der i alt er <span class="math inline">\(10 \times 9 \times 8 = 720\)</span> måder de tre medaljer kan fordeles blandt 10 deltagere på.</p>
+<p>Ligesom før vil vi gerne skrive det lidt mere generelt: Hvor mange måder kan præmierne (eller alt muligt andet) fordeles på, hvis vi har <span class="math inline">\(n\)</span> deltagere og <span class="math inline">\(r\)</span> præmier?</p>
+<p>Her får vi brug for en regneart som hedder fakultet, og skrives med et udråbstegn. Det er ret enkelt: Fakultet til 3 skrives <span class="math inline">\(3!\)</span> og er bare: <span class="math inline">\(3! = 3 \times 2 \times 1 = 6\)</span>. Fakultet til 5 er selvfølgelig: <span class="math inline">\(5! = 5 \times 4 \times 3 \times 2 \times 1 = 120\)</span>. Hele formålet med fakultet er at slippe for at skrive meget lange gangestykker. Tænk på, hvor besværligt det ville være at skrive <span class="math inline">\(100! = 100 \times 99 \times 98\)</span> og så videre.</p>
+<p>Én lille ting man bare skal vide om fakultet er, at man definerer fakultet til nul som én, altså: <span class="math inline">\(0!=1\)</span> Lidt på samme måde som <span class="math inline">\(x^0=1\)</span> hvilket vi talte om i kapitlet <a href="logaritmer.html#sec-logaritmer" class="quarto-xref"><span>Hvad er logaritmefunktioner?</span></a></p>
+<p>Når vi har det lille trick på plads, kan vi skrive vores udregning fra før sådan her:</p>
+<p><span class="math display">\[\frac{10 \times 9 \times 8 \times 7 \times 6\times 5 \times 4 \times 3 \times 2 \times 1}{7 \times 6\times 5 \times 4 \times 3 \times 2 \times 1} = \frac{10 \times 9 \times 8 \times \cancel{7!}}{\cancel{7!}} = 10 \times 9 \times 8\]</span></p>
+<p>Derfor bliver den generelle formel, med <span class="math inline">\(n\)</span> spillere og <span class="math inline">\(k\)</span> præmier:</p>
+<p><span class="math display">\[\frac{n!}{(n-k)!}\]</span></p>
+<p>Nogle gange bruger vi en endnu mere kompakt skrivemåde:</p>
+<p><span class="math display">\[P(n,r) = \frac{n!}{(n-k)!}\]</span></p>
+<p>Hvor <span class="math inline">\(P\)</span> står for permutationer, hvilket bare betyder, at elementerne (her elever) er valgt på en måde, hvor rækkefølgen betyder noget – altså <em>ordnet</em> og uden tilbagelægning.</p>
+<p>Det skal måske lige have et øjebliks eftertanke, selvom det <em>egentlig</em> ikke er så svært.</p>
+<p>Har vi for eksempel 25 elever og skal vælge én elevrådsrepræsentant og én suppleant, har vi <span class="math inline">\(n=25\)</span> og <span class="math inline">\(k=2\)</span>. Så det kan gøres på <span class="math inline">\(\frac{25!}{(25-2)!} = 25 \times 24 = 600\)</span> måder.</p>
+</section>
+<section id="uordnet-uden-tilbagelægning" class="level3">
+<h3 class="anchored" data-anchor-id="uordnet-uden-tilbagelægning">Uordnet, uden tilbagelægning</h3>
+<p>Så er vi nået til de <em>uordnede</em> kombinatoriske problemer, altså dem hvor rækkefølgen <em>ikke</em> betyder noget. Hvis vi for eksempel skal nedsætte et festudvalg, betyder rækkefølgen af medlemmer ikke noget. Der er lige meget om vi først vælger Anna, så Benjamin og til sidst Clara, eller om vi først vælger Clara, så Anna og så Benjamin – det er det samme festudvalg. (Elevrådet som vi lige nævnte var anderledes, for der var forskel på at blive valgt til <em>repræsentant</em> eller <em>suppleant</em>.)</p>
+<p>Vi kan starte med at udregne: <span class="math inline">\(25 \times 24 \times 23 = 13.800\)</span>. Det er formlen fra før: <span class="math inline">\(P(25,3) = \frac{25!}{(25-3)!} = 13.800\)</span>. Men fordi vi tæller ordnede kombinationer har vi talt for mange med: Anna, så Benjamin og Clara er talt som én kombination; Clara, Anna og Benjamin som en anden.</p>
+<p>På hvor mange måder kan tre personer arrangeres? Det er faktisk lige præcis det, vi lærte i sidste afsnit, for det svarer til at vælge tre personer ud af tre mulige personer. Det kan gøres på <span class="math inline">\(P(3, 3) = \frac{3!}{(3-3)!} = 3! = 3 \times 2 \times 1 = 6\)</span> måder. (Idet vi husker at <span class="math inline">\(0!=1\)</span>).</p>
+<p>Sagt lidt anderledes: Lad os forkorte navnene og sige, at festudvalget består af Anna (A), Benjamin (B) og Clara (C). Så er der disse 6 måder at udvælge dem i rækkefølge:</p>
+<ul>
+<li>A, B, C</li>
+<li>A, C, B</li>
+<li>B, A, C</li>
+<li>B, C, A</li>
+<li>C, A, B</li>
+<li>C, B, A</li>
+</ul>
+<p>Men det er jo det samme festudvalg alle seks gange!</p>
+<p>Derfor skal vi dividere de <em>ordnede</em> kombinationer 13.800 med 6 <em>måder</em> de kan ordnes på, for at finde det rigtige antal forskellige festudvalg:</p>
+<p><span class="math display">\[\frac{25 \times 24 \times 23}{3!} = \frac{13.800}{6} = 2.300\]</span></p>
+<p>Og hvis vi skriver det med fakulteter, får vi:</p>
+<p><span class="math display">\[\frac{25!}{22! \times 3!} = \frac{25!}{3!(25-3)!} = 2.300\]</span></p>
+<p>Dette er præcis formlen for uordnet udvælgelse uden tilbagelægning:</p>
+<p><span class="math display">\[\binom{n}{k} = \frac{n!}{k!(n-k)!}\]</span></p>
+<p>Hvor <span class="math inline">\(n=25\)</span> (antal elever) og <span class="math inline">\(k=3\)</span> (antal personer i festudvalget). Vi bruger den lidt sjove og måske nye skrivemåde <span class="math inline">\(\binom{n}{k}\)</span> for antal “uordnede kombinationer”. Det er nemt at forveksle med en brøk: <span class="math inline">\(\frac{n}{k}\)</span>, men det er altså noget helt andet.</p>
+<p>Et sidste eksempel: På hvor mange måder kan man sammensætte en pokerhånd bestående af 5 kort udvalgt fra et spil med 52 forskellige kort? Det er netop et problem der handler om uordnet udvælgelse uden tilbagelægning: Det lige meget hvilken rækkefølge du får kortene i, men du kan kun få hvert kort én gang.</p>
+<p>Bruger vi formlen (og lommeregneren) er det egentlig slet ikke så svært:</p>
+<p><span class="math display">\[\binom{52}{5} = \frac{52!}{5!(52-5)!} = 2.598.960\]</span></p>
+<p>Der er altså mere end 2½ millioner pokerhænder.</p>
+</section>
+<section id="uordnet-med-tilbagelægning" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="uordnet-med-tilbagelægning">Uordnet, med tilbagelægning</h3>
+<p>Den sidste type problem i kombinatorikken handler om uordnet udvælgelse med tilbagelægning. Det kunne være, når man vælger bland-selv-slik: Du kan godt tage samme slags slik flere gange, og rækkefølgen betyder ikke noget. Fordi det hele ikke skal handle om søde sager, så lad os tage et eksempel med isvafler i stedet for bland-selv-slik.</p>
+<p>Lad os sige, at isbutikken har tre forskellige slags is: chokolade, vanilje og jordbær. Du skal vælge to kugler is, og du må godt tage samme kugle flere gange. På hvor mange forskellige måder kan du sammensætte din vaffelis?</p>
+<p>Det er lidt mere vanskeligt at vride hjernen omkring. Vi kan løse det ved at tænke på det som bokse med is, som vi kan pege på. (Det er et kendt trick som nogle gange bliver kaldt “stjerner og pinde”, og blev udbredt af en matematiker ved navn William Feller – på billedet til højre.)</p>
+<p>Vi har tre bokse med is, og vi kan illustrere dem sådan:</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://mathshistory.st-andrews.ac.uk/Biographies/Feller/Feller_3.jpeg"><img src="https://mathshistory.st-andrews.ac.uk/Biographies/Feller/Feller_3.jpeg" class="img-fluid figure-img"></a></p>
+<figcaption>William Feller (1906-1970)</figcaption>
+</figure>
+</div>
+</div></div><pre><code>chokolade | vanilje | jordbær </code></pre>
+<p>Lad os så sige at vi skriver vores valg sådan her, hvor <code>o</code> er en kugle og <code>|</code> er skillevæggen mellem boksene. Vi kan vælge de to kugler blandt de tre slags på seks måder:</p>
+<pre><code>o o | |     = 2 chokolade, 0 vanilje, 0 jordbær
+o | o |     = 1 chokolade, 1 vanilje, 0 jordbær
+o | | o     = 1 chokolade, 0 vanilje, 1 jordbær
+| o o |     = 0 chokolade, 2 vanilje, 0 jordbær
+| o | o     = 0 chokolade, 1 vanilje, 1 jordbær
+| | o o     = 0 chokolade, 0 vanilje, 2 jordbær</code></pre>
+<p>Så for eksempel <code>| o o |</code> er en slags kode, der betyder, vi har valgt to kugler med vanilje. Hvor mange forskelige “koder” er der? Der er fire positioner eller tegn i koden, én for hver af de to kugler, og én for hver af de to skillevægge. På hvor mange måder kan vi placere vores iskugler på de fire positioner? Det er lige præcis et uordnet problem uden tilbagelægning, så vi har lige lært, at vi kan regne det ud sådan her:</p>
+<p><span class="math display">\[\binom{4}{2} = \frac{4!}{2!(4-2)!} = \frac{24}{2 \times 2} = 6\]</span></p>
+<p>Hvor vi regner os frem til seks muligheder, svarende til den liste vi lige så.</p>
+<p>Hvis vi havde haft fire slags is ville vi have haft brug for en skillevæg mere. For eksempel:</p>
+<pre><code>chokolade | vanilje | jordbær | pistache </code></pre>
+<p>Så skulle vi vælge vores to iskugler i en kode med fem positioner, for eksempel sådan her:</p>
+<pre><code>o | o | |</code></pre>
+<p>for chokolade, vanilje, ingen jordbær og ingen pistache.</p>
+<p>Det kan gøres på:</p>
+<p><span class="math display">\[\binom{5}{2} = \frac{5!}{2!(5-2)!} = \frac{120}{2 \times 6} = 10\]</span> måder.</p>
+<p>Og så til den generelle variant: Hvis vi har <span class="math inline">\(n\)</span> forskellige smagsvarianter og skal vælge <span class="math inline">\(k\)</span> kugler, får vi:</p>
+<ul>
+<li><span class="math inline">\(k\)</span> er antal kugler vi vælger (vi har brugt <code>o</code> som symbol for kugle).</li>
+<li><span class="math inline">\(n-1\)</span> er antal skillevægge mellem de <span class="math inline">\(n\)</span> smagsvarianter (vi har brugt <code>|</code> som symbol for skillevæg).</li>
+<li>I alt <span class="math inline">\(k + (n-1) = n+k-1\)</span> tegn i “koden” for isvalg.</li>
+</ul>
+<p>Vi skal vælge hvilke <span class="math inline">\(k\)</span> af de <span class="math inline">\(n+k-1\)</span> positioner i koden, der skal være kugler, hvilket giver:</p>
+<p><span class="math display">\[\binom{n+k-1}{k} = \frac{(n+k-1)!}{k!(n-1)!}\]</span></p>
+<p>Dette er dermed formlen for uordnet udvælgelse med tilbagelægning.</p>
+<p>Hvis du syntes det var lidt svært, så vil jeg godt indrømme, at det synes jeg også. Det er noget af et mentalt spring at tænke i “koder” og “skillevægge”, når man bare gerne vil have en is.</p>
+<p>Men hvis du sådan nogenlunde kunne følge tankegangen, håber jeg du kan acceptere, at formlen er rigtigt nok. Den findes i rigtig mange formelsamlinger, eller på <a href="https://regneregler.dk/kombinatorik-uordnet-med-tilbagelaegning/">nettet</a>, hvis du har lyst til at tjekke efter.</p>
+</section>
+</section>
+<section id="overblik" class="level2">
+<h2 class="anchored" data-anchor-id="overblik">Overblik</h2>
+<p>Vi kan sætte de formler vi har gennemgået ind i skemaet fra starten, for at få et overblik:</p>
 <table class="caption-top table">
 <caption>Formler for beregning af kombinationer</caption>
 <colgroup>
@@ -327,10 +412,26 @@ Af skemaet kan vi se, at der på denne måde er i alt fire typer af problemer.</
 </tr>
 </tbody>
 </table>
+<p>De fire formler får os et langt stykke af vejen i mange problemer der handler om kombinatorik. Men som jeg skrev allerede i starten, det vigtigste (og sværeste) er næsten at gøre sig <em>helt</em> klart, hvad for en type problem man har med at gøre. Ordnet eller uordnet, med eller uden tilbagelægning (eller måske en spøjs variation)?</p>
 </section>
+<section id="modsatte-vej" class="level2">
+<h2 class="anchored" data-anchor-id="modsatte-vej">Modsatte vej</h2>
+<p>Lad os kigge på kodelåsen igen, og se hvordan man kan bruge logaritmer til at regne den modsatte vej: Hvor mange muligheder kræver det, hvis vi ønsker et bestemt antal kombinationer?</p>
+<p>Forestil dig, at vi designede en kodelås beregnet til folk, som ikke kan læse tal og bogstaver, og vi i stedet brugte farver. Vi ville nok ikke have lyst til alt for mange farver, for så ville de minde for meget om hinanden. Lad os sige, vi ville lave en lås, hvor hver ring havde fire farvemuligheder: Rød, grøn, gul og blå.</p>
+<p>Hvor mange ringe skulle vi have, for at få mindst 10.000 kombinationer, så det ville være meget svært at prøve sig frem og finde den rigtige? Lad os prøve med en ligning, og bruge formlen <span class="math inline">\(n^k\)</span>, fordi vi har et ordnet problem med tilbagelægning:</p>
+<p><span class="math inline">\(4^k &gt; 10000\)</span></p>
+<p>Hvor <span class="math inline">\(k\)</span> er antallet af ringe og 4 er de 4 farver vi besluttede os for. Den type ligning lærte vi at løse i kapitlet <a href="logaritmer.html#sec-logaritmer" class="quarto-xref"><span>Hvad er logaritmefunktioner?</span></a>. Kort fortalt er tricket bare at tage logaritmen på begge sider:</p>
+<p><span class="math inline">\(log(4^k) &gt; log(10000)\)</span></p>
+<p>Herfra kan vi bruge regnereglen, <span class="math inline">\(log(x^n) = n \cdot log(x)\)</span> og få:</p>
+<p><span class="math inline">\(k \cdot log(4) &gt; log(10000)\)</span></p>
+<p>Flytter vi lidt rundt og bruger lommeregneren finder vi:</p>
+<p><span class="math inline">\(k  &gt; \frac{log(10000)}{log(4)} &gt; 6{,}6\)</span></p>
+<p>En lås med fire farver skal altså have syv ringe for at nå op på mere end 10.000 kombinationer. (Vi kan hurtigt tjekke hvor mange kombinationer det giver, sådan her: <span class="math inline">\(4^7 = 16.384\)</span>. Vi kan også tjekke, at 6 ringe ikke havde været nok: <span class="math inline">\(4^6 = 4096\)</span>)</p>
 </section>
-<section id="tælletræet" class="level2">
+<section id="tælletræet" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="tælletræet">Tælletræet</h2>
+<p>Tælletræet er også et almindeligt værktøj til at kunne se, hvordan antallet af kombinationer vokser, jo flere valg vi har, og jo flere muligheder der er ved hvert valg. Fordelen er, at det også kan bruges, hvis de enkelte valg har <em>forskellige</em> muligheder.</p>
+<p>Altså for eksempel hvis man skal tage tøj på og først skal vælge mellem to forskellige farver bukser og dernæste mellem tre <em>andre</em> farver t-shirt. I det eksempel kan et tælletræ se sådan her ud:</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -340,10 +441,30 @@ Af skemaet kan vi se, at der på denne måde er i alt fire typer af problemer.</
 </div>
 </div>
 </div>
+<p>Hver cirkel er et valg, og hver streg er en mulighed for at vælge. I eksemplet har vi to farver bukser, sort og blå, og tre farver t-shirts: Rød, gul og grøn. Det giver så i alt seks muligheder for ret farverige outfits. Det er samme multiplikationsprincip som vi har brugt før: Bukserne kan vælges på to måder, og for <em>hver</em> mulighed kan t-shirten vælges på tre måder, så det samlede antal kombinationer er <span class="math inline">\(2 \times 3 = 6\)</span>.</p>
+<p>Der er ikke nogen generel formel der helt dækker denne situation, for der er så mange måder valgene kan skrues sammen på, så man er nødt til at se på de enkelte tilfælde – om det så er tøj, isvafler eller noget helt andet.</p>
+<p>Hvis vi skal tilbage til isene, kan man forestille sig, at man først skal vælge mellem bæger og vaffel (to muligheder), én kugle blandt 5 forskellige smage, og så én af tre forskellige slags drys på toppen. I så fald ville tælletræet se sådan her ud:</p>
+<div class="cell page-columns page-full">
+<div class="cell-output-display page-columns page-full">
+<div class="page-columns page-full">
+<figure class="figure page-columns page-full">
+<p class="page-columns page-full"><img src="kombinatorik_files/figure-html/istælletræ-1.png" class="img-fluid figure-img column-screen-inset" width="1728"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>I dette eksempel kan vi se, at der er i alt <span class="math inline">\(2 \times 5 \times 3 = 30\)</span> forskellige måder at sammensætte en is på. Vi kan også se, at tælletræer hurtigt kan blive lidt gnidrede.</p>
 </section>
 <section id="kast-med-to-terninger" class="level2">
 <h2 class="anchored" data-anchor-id="kast-med-to-terninger">Kast med to terninger</h2>
-<p>Når vi kaster to terninger, får vi forskellige kombinationer afhængigt af, hvilket tal der kommer på hver terning. Her er en oversigt over alle de mulige kombinationer:</p>
+<p>Et meget almindeligt spørgsmål i kombinatorik er, hvor mange mulige udfald der er, hvis man kaster to terninger? Som altid er det vigtigt at være præcis: Er der forskel på de to terninger, eller er det lige meget om man slår seks med den ene terning og et med den anden eller omvendt? Hvis man spiller ludo eller backgammon er rækkefølgen lige meget, 6-1 er det samme som 1-6. I så fald er udvælgelsen <em>uordnet</em> (men i andre spil kunne det være anderledes.)</p>
+<p>Der er også tale om <em>tilbagelægning</em> – man kan godt slå en femmer med begge terninger.</p>
+<p>Derfor er vi i præcis samme situation som med isen og de tre smage, men denne gang skal vi vælge to tal ud af seks mulige. Rækkefølgen er stadig ligegyldig og man kan godt tage samme tal to gange. Vi bruger altså igen formlen for <em>uordnet</em> udvælgelse <em>med</em> tilbagelægning:</p>
+<p><span class="math display">\[\binom{n+k-1}{k} = \frac{(n+k-1)!}{k!(n-1)!}\]</span></p>
+<p>Med to sekssidede terninger er <span class="math inline">\(n=6\)</span> og <span class="math inline">\(k=2\)</span>:</p>
+<p><span class="math display">\[\binom{6+2-1}{2} = \frac{(6+2-1)!}{2!(6-1)!} = \frac{7!}{2 \times 5!} = \frac{5040}{240} = 21\]</span></p>
+<p>Altså 21 forskellige slag med to terninger.</p>
+<p>Når vi lige netop har to terninger, kan det være nyttigt for overblikket at sætte det op i en tabel, hvor den ene terning er rækkerne og den anden terning er kolonnerne. Her er sådan en tabel:</p>
 <table class="caption-top table">
 <caption>Alle kombinationer ved kast med to terninger</caption>
 <colgroup>
@@ -432,12 +553,13 @@ terning</strong></th>
 </table>
 <p><br>
 </p>
-<p>Som tabellen viser, er der i alt <strong>36 forskellige kombinationer</strong> når vi kaster to terninger. Hver kombination er lige så sandsynlig - der er <span class="math inline">\(\frac{1}{36}\)</span> chance for at få præcis “3-5” eller en hvilken som helst anden bestemt kombination.</p>
-<p>De <strong>fremhævede kombinationer</strong> på diagonalen (1-1, 2-2, 3-3, 4-4, 5-5, 6-6) er de såkaldte “dobbelte” - hvor begge terninger viser det samme tal. Bemærk at der kun er én måde at få hver dobbelt på, mens der er to måder at få andre summer på (f.eks. kan man få summen 5 både som 2-3 og som 3-2).</p>
+<p>Som tabellen viser, er der i alt 36 kombinationer, eller celler i tabellen, når vi kaster to terninger. Men eftersom nogle af mulighederne er ens (1-6 er det samme som 6-1), giver det kun 21 <em>forskellige</em> kombinationer. Tæl selv efter.</p>
+<p>De <strong>fremhævede kombinationer</strong> på diagonalen (1-1, 2-2, 3-3, 4-4, 5-5, 6-6) er de såkaldte “dobbelte” - hvor begge terninger viser det samme tal. Bemærk at der kun er én måde at få hver dobbelt på, mens der er to måder at få alle andre slag på.</p>
+<p>Det antyder også en sammenhæng mellem kombinatiorik og sandsynligsregning (et stort emne, som vi slet ikke har kigget på endnu.) Sandsynligheden for at slå for eksempel 3-5 er <span class="math inline">\(\frac{2}{36} = \frac{1}{18} \approx 0{,}06\)</span> fordi der er <em>to</em> måder ud af alle 36 kombinationer at slå 3-5 på, nemlig 3-5 og 5-3. Men sandsynligheden for at slå 6-6 er <span class="math inline">\(\frac{1}{36} \approx 0{,}03\)</span> fordi der kun er én måde at gøre det på.</p>
 </section>
 <section id="opgaver" class="level2">
 <h2 class="anchored" data-anchor-id="opgaver">Opgaver</h2>
-<p><strong>Opgave 1:</strong> På hvor mange måder kan man blande 10 stykker slik ud af de 100 forskellige stykker kiosken har?</p>
+<p><strong>Opgave 1:</strong> Hvis en restaurant har 5 forretter, 8 hovedretter og 4 desserter, på hvor mange måder kan du sammensætte en komplet menu?</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -450,17 +572,17 @@ Vis svar
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Dette er et problem med <em>uordnet</em> udvælgelse <em>med</em> tilbagelægning, da: - Rækkefølgen af slik i posen er ligegyldig (uordnet) - Man kan vælge flere af samme slags slik (med tilbagelægning)</p>
-<p>Vi bruger formlen: <span class="math inline">\(\binom{n+k-1}{k} = \binom{100+10-1}{10} = \binom{109}{10}\)</span></p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>Antallet af måder: 4,263422e+13</code></pre>
+<p>Dette er et simpelt multiplikationsproblem:</p>
+<ul>
+<li>Du skal vælge 1 forret ud af 5 muligheder</li>
+<li>Du skal vælge 1 hovedret ud af 8 muligheder</li>
+<li>Du skal vælge 1 dessert ud af 4 muligheder</li>
+</ul>
+<p>Derfor er det samlede antal menuer: <span class="math inline">\(5 \times 8 \times 4 = \textbf{160}\)</span> forskellige måder.</p>
 </div>
 </div>
 </div>
-</div>
-</div>
-<p><strong>Opgave 2:</strong> Hvis en restaurant har 5 forretter, 8 hovedretter og 4 desserter, på hvor mange måder kan du sammensætte en komplet menu?</p>
+<p><strong>Opgave 2:</strong> På hvor mange måder kan man blande 10 stykker slik ud af de 100 forskellige stykker kiosken har?</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -473,12 +595,13 @@ Vis svar
 </div>
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Dette er et simpelt multiplikationsproblem: - Du skal vælge 1 forret ud af 5 muligheder - Du skal vælge 1 hovedret ud af 8 muligheder - Du skal vælge 1 dessert ud af 4 muligheder</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>Antal mulige menuer: 160</code></pre>
-</div>
-</div>
+<p>Dette er et problem med <em>uordnet</em> udvælgelse <em>med</em> tilbagelægning, da:</p>
+<ul>
+<li>Rækkefølgen af slik i posen er ligegyldig (uordnet)</li>
+<li>Man kan vælge flere af samme slags slik (med tilbagelægning)</li>
+</ul>
+<p>Vi bruger formlen: <span class="math inline">\(\binom{n+k-1}{k} = \binom{100+10-1}{10} = \binom{109}{10}\)</span></p>
+<p>Dette giver <strong>42.634.215.112.710</strong> forskellige måder at blande slikket på.</p>
 </div>
 </div>
 </div>
@@ -495,18 +618,510 @@ Vis svar
 </div>
 <div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Dette er et problem med <em>ordnet</em> udvælgelse <em>uden</em> tilbagelægning: - Rækkefølgen betyder noget (ordnet) - Vi kan ikke bruge samme ciffer to gange (uden tilbagelægning)</p>
+<p>Dette er et problem med <em>ordnet</em> udvælgelse <em>uden</em> tilbagelægning:</p>
+<ul>
+<li>Rækkefølgen betyder noget (ordnet)</li>
+<li>Vi kan ikke bruge samme ciffer to gange (uden tilbagelægning)</li>
+</ul>
 <p>Vi vælger 4 cifre ud af 10 mulige (0-9), hvor rækkefølgen betyder noget.</p>
-<p>Formlen er: <span class="math inline">\(\frac{n!}{(n-k)!} = \frac{10!}{(10-4)!} = \frac{10!}{6!}\)</span></p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>Antal mulige koder: 5.040</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>
-Direkte beregning: 5.040</code></pre>
+<p>Formlen er: <span class="math inline">\(\frac{n!}{(n-k)!} = \frac{10!}{(10-4)!} = \frac{10!}{6!} = 10 \times 9 \times 8 \times 7 = \textbf{5.040}\)</span></p>
+<p>Der er altså <strong>5.040</strong> forskellige 4-cifret koder med forskellige cifre.</p>
 </div>
 </div>
+</div>
+<p><strong>Opgave 4:</strong> Du har en garderobe med 4 par bukser, 6 forskellige T-shirts og 3 par sko. På hvor mange måder kan du sammensætte et outfit bestående af ét par bukser, én T-shirt og ét par sko?</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vis svar
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dette er et simpelt multiplikationsproblem:</p>
+<ul>
+<li>Du skal vælge 1 par bukser ud af 4 muligheder</li>
+<li>Du skal vælge 1 T-shirt ud af 6 muligheder</li>
+<li>Du skal vælge 1 par sko ud af 3 muligheder</li>
+</ul>
+<p>Derfor er det samlede antal outfits: <span class="math inline">\(4 \times 6 \times 3 = \textbf{72}\)</span> forskellige måder.</p>
+</div>
+</div>
+</div>
+<p><strong>Opgave 5:</strong> Hvor mange forskellige 4-cifrede pinkoder kan man lave, hvis man må bruge samme ciffer flere gange?</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vis svar
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dette er et problem med <em>ordnet</em> udvælgelse <em>med</em> tilbagelægning:</p>
+<ul>
+<li>Rækkefølgen betyder noget (pinkoden 1234 er forskellig fra 4321)</li>
+<li>Vi kan bruge samme ciffer flere gange (med tilbagelægning)</li>
+</ul>
+<p>For hver af de 4 positioner i pinkoden kan vi vælge mellem 10 cifre (0-9). Derfor er det samlede antal pinkoder:</p>
+<p><span class="math display">\[10 \times 10 \times 10 \times 10 = 10^4 = \textbf{10.000}\]</span></p>
+<p>Der er altså <strong>10.000</strong> forskellige 4-cifrede pinkoder.</p>
+</div>
+</div>
+</div>
+<p><strong>Opgave 6:</strong> En bogklub skal vælge 4 bøger ud af 12 tilgængelige bøger til at læse i løbet af året. På hvor mange måder kan de vælge de 4 bøger?</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vis svar
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dette er et problem med <em>uordnet</em> udvælgelse <em>uden</em> tilbagelægning:</p>
+<ul>
+<li>Rækkefølgen betyder ikke noget (det samme udvalg af bøger, uanset rækkefølge)</li>
+<li>Hver bog kan kun vælges én gang (uden tilbagelægning)</li>
+</ul>
+<p>Vi bruger formlen: <span class="math inline">\(\binom{n}{k} = \frac{n!}{k!(n-k)!}\)</span></p>
+<p>Med <span class="math inline">\(n=12\)</span> bøger og <span class="math inline">\(k=4\)</span> valg får vi:</p>
+<p><span class="math display">\[\binom{12}{4} = \frac{12!}{4!(12-4)!} = \frac{12!}{4! \times 8!} = \textbf{495}\]</span></p>
+<p>Der er altså <strong>495</strong> forskellige måder at vælge 4 bøger ud af 12.</p>
+</div>
+</div>
+</div>
+<p><strong>Opgave 7:</strong> Ved en konkurrence skal der uddeles guld-, sølv- og bronchemedaljer til 8 deltagere. På hvor mange måder kan de tre medaljer fordeles?</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vis svar
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dette er et problem med <em>ordnet</em> udvælgelse <em>uden</em> tilbagelægning:</p>
+<ul>
+<li>Rækkefølgen betyder noget (guld ≠ sølv ≠ bronze)</li>
+<li>Hver person kan kun få én medalje (uden tilbagelægning)</li>
+</ul>
+<p>Vi vælger 3 personer ud af 8, hvor rækkefølgen betyder noget. Formlen er:</p>
+<p><span class="math display">\[\frac{n!}{(n-k)!} = \frac{8!}{(8-3)!} = \frac{8!}{5!} = 8 \times 7 \times 6 = \textbf{336}\]</span></p>
+<p>Der er altså <strong>336</strong> forskellige måder at fordele de tre medaljer.</p>
+</div>
+</div>
+</div>
+<p><strong>Opgave 8:</strong> Du skal vælge en formand og en næstformand til en klub, der har 20 medlemmer. Lad os identificere hvilken type problem det er:</p>
+<ol type="a">
+<li><p>Er rækkefølgen vigtig i dette problem?</p></li>
+<li><p>Kan samme person vælges til både formand og næstformand?</p></li>
+<li><p>Hvilken type problem er det? (ordnet/uordnet og med/uden tilbagelægning)</p></li>
+<li><p>Hvilken formel skal vi bruge?</p></li>
+<li><p>Bonus: Beregn antallet af måder, hvis du har lyst!</p></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vis svar
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Lad os besvare hvert spørgsmål:</p>
+<p><strong>a) Er rækkefølgen vigtig?</strong></p>
+<p>Ja! Formand og næstformand er to forskellige roller. Det er ikke det samme at vælge Anna til formand og Benjamin til næstformand, som at vælge Benjamin til formand og Anna til næstformand. Rækkefølgen betyder altså noget.</p>
+<p><strong>b) Kan samme person vælges til begge roller?</strong></p>
+<p>Nej. En person kan ikke være både formand og næstformand på samme tid. Vi vælger uden tilbagelægning.</p>
+<p><strong>c) Hvilken type problem er det?</strong></p>
+<p>Dette er et <em>ordnet</em> problem <em>uden</em> tilbagelægning.</p>
+<p><strong>d) Hvilken formel skal vi bruge?</strong></p>
+<p>Vi bruger formlen for permutationer (ordnet udvælgelse uden tilbagelægning):</p>
+<p><span class="math display">\[P(n,k) = \frac{n!}{(n-k)!}\]</span></p>
+<p><strong>e) Beregning:</strong></p>
+<p>Med <span class="math inline">\(n=20\)</span> medlemmer og <span class="math inline">\(k=2\)</span> roller får vi:</p>
+<p><span class="math display">\[P(20,2) = \frac{20!}{(20-2)!} = \frac{20!}{18!} = 20 \times 19 = \textbf{380}\]</span></p>
+<p>Der er altså <strong>380</strong> forskellige måder at vælge formand og næstformand på.</p>
+</div>
+</div>
+</div>
+<p><strong>Opgave 9:</strong> I det danske lotto skal man vælge 7 tal ud af tallene 1-36. På hvor mange måder kan man udfylde en lottokulpon?</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vis svar
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dette er et problem med <em>uordnet</em> udvælgelse <em>uden</em> tilbagelægning:</p>
+<ul>
+<li>Rækkefølgen betyder ikke noget (det samme lodtrækningsnummer, uanset rækkefølge)</li>
+<li>Hvert tal kan kun vælges én gang (uden tilbagelægning)</li>
+</ul>
+<p>Vi bruger formlen: <span class="math inline">\(\binom{n}{k} = \frac{n!}{k!(n-k)!}\)</span></p>
+<p>Med <span class="math inline">\(n=36\)</span> tal og <span class="math inline">\(k=7\)</span> valg får vi:</p>
+<p><span class="math display">\[\binom{36}{7} = \frac{36!}{7!(36-7)!} = \frac{36!}{7! \times 29!} = \textbf{8.347.680}\]</span></p>
+<p>Der er altså <strong>8.347.680</strong> forskellige måder at udfylde en lottokulpon på. Det er derfor ret svært at vinde i lotto!</p>
+</div>
+</div>
+</div>
+<p><strong>Opgave 10:</strong> Du skal lave et 3-bogstavs password, hvor alle tre bogstaver skal være forskellige. Det danske alfabet har 29 bogstaver (A-Å). Hvor mange forskellige passwords kan du lave?</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vis svar
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dette er et problem med <em>ordnet</em> udvælgelse <em>uden</em> tilbagelægning:</p>
+<ul>
+<li>Rækkefølgen betyder noget (ABC er forskellig fra BAC)</li>
+<li>Hvert bogstav kan kun bruges én gang (uden tilbagelægning)</li>
+</ul>
+<p>Vi vælger 3 bogstaver ud af 29, hvor rækkefølgen betyder noget:</p>
+<p><span class="math display">\[\frac{n!}{(n-k)!} = \frac{29!}{(29-3)!} = \frac{29!}{26!} = 29 \times 28 \times 27 = \textbf{21.924}\]</span></p>
+<p>Der er altså <strong>21.924</strong> forskellige 3-bogstavs passwords med forskellige bogstaver.</p>
+</div>
+</div>
+</div>
+<p><strong>Opgave 11:</strong> I en isbutik kan du vælge 3 kugler is ud af 5 forskellige smagsvarianter. Du må gerne tage samme smag flere gange. På hvor mange måder kan du sammensætte din is?</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vis svar
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dette er et problem med <em>uordnet</em> udvælgelse <em>med</em> tilbagelægning:</p>
+<ul>
+<li>Rækkefølgen betyder ikke noget (det er samme is, uanset hvilken rækkefølge kuglerne vælges i)</li>
+<li>Du kan vælge samme smag flere gange (med tilbagelægning)</li>
+</ul>
+<p>Vi bruger formlen for uordnet udvælgelse med tilbagelægning:</p>
+<p><span class="math display">\[\binom{n+k-1}{k} = \binom{5+3-1}{3} = \binom{7}{3} = \frac{7!}{3!(7-3)!} = \frac{7!}{3! \times 4!} = \textbf{35}\]</span></p>
+<p>Der er altså <strong>35</strong> forskellige måder at sammensætte din is på.</p>
+</div>
+</div>
+</div>
+<p><strong>Opgave 12:</strong> En fodboldtræner har 15 spillere til rådighed og skal vælge 11 til startopstillingen. På hvor mange måder kan træneren vælge startopstillingen?</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vis svar
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dette er et problem med <em>uordnet</em> udvælgelse <em>uden</em> tilbagelægning:</p>
+<ul>
+<li>Rækkefølgen betyder ikke noget (vi tæller bare hvem der er med, ikke i hvilken rækkefølge de vælges)</li>
+<li>Hver spiller kan kun vælges én gang (uden tilbagelægning)</li>
+</ul>
+<p>Vi bruger formlen: <span class="math inline">\(\binom{n}{k} = \frac{n!}{k!(n-k)!}\)</span></p>
+<p>Med <span class="math inline">\(n=15\)</span> spillere og <span class="math inline">\(k=11\)</span> valg får vi:</p>
+<p><span class="math display">\[\binom{15}{11} = \frac{15!}{11!(15-11)!} = \frac{15!}{11! \times 4!}\]</span></p>
+<p>Dette er det samme som <span class="math inline">\(\binom{15}{4}\)</span> (fordi det er det samme at vælge 11 til at være med som at vælge 4 til at sidde på bænken):</p>
+<p><span class="math display">\[\binom{15}{4} = \frac{15 \times 14 \times 13 \times 12}{4 \times 3 \times 2 \times 1} = \textbf{1.365}\]</span></p>
+<p>Der er altså <strong>1.365</strong> forskellige måder at sammensætte startopstillingen.</p>
+</div>
+</div>
+</div>
+<p><strong>Opgave 13:</strong> Du kaster to terninger: en normal 6-sidet terning (med tallene 1-6) og en 8-sidet terning (med tallene 1-8). Hvis du tænker på resultatet som et <em>uordnet</em> par (hvor det ikke betyder noget hvilken terning der viser hvad), hvor mange forskellige udfald kan du så få?</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vis svar
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dette er et mere kompliceret problem, der kræver at vi tænker i cases!</p>
+<p>Vi kan ikke bare bruge en standardformel her, fordi de to terninger har forskellige antal sider. Lad os tænke systematisk:</p>
+<p><strong>Case 1: Begge terninger viser samme tal (1-6)</strong></p>
+<p>Dette kan kun ske for tallene 1, 2, 3, 4, 5 og 6 (da den 6-sidede terning ikke kan vise 7 eller 8). Så der er <strong>6 muligheder</strong>.</p>
+<p><strong>Case 2: De to terninger viser forskellige tal fra 1-6</strong></p>
+<p>Vi vælger 2 forskellige tal ud af tallene 1-6, hvor rækkefølgen ikke betyder noget:</p>
+<p><span class="math display">\[\binom{6}{2} = \frac{6 \times 5}{2} = 15 \text{ muligheder}\]</span></p>
+<p><strong>Case 3: Den 6-sidede viser 1-6, den 8-sidede viser 7 eller 8</strong></p>
+<p>Den 6-sidede kan vise 6 forskellige tal, og den 8-sidede kan vise 2 forskellige tal (7 eller 8). Det giver <span class="math inline">\(6 \times 2 = 12\)</span> muligheder.</p>
+<p><strong>Total antal uordnede par:</strong></p>
+<p><span class="math display">\[6 + 15 + 12 = \textbf{33}\]</span></p>
+<p>Der er altså <strong>33</strong> forskellige uordnede udfald når man kaster en 6-sidet og en 8-sidet terning.</p>
+</div>
+</div>
+</div>
+<p><strong>Opgave 14:</strong> Hvor mange cifre skal en pinkode have for at der er mindst 1 million forskellige kombinationer? (Husk at cifre må gentages)</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vis svar
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-14" class="callout-14-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dette er et eksempel på at bruge kombinatorik “baglæns” sammen med logaritmer!</p>
+<p>Vi ved at en pinkode med <span class="math inline">\(k\)</span> cifre har <span class="math inline">\(10^k\)</span> forskellige kombinationer (ordnet med tilbagelægning). Vi søger det mindste <span class="math inline">\(k\)</span> hvor:</p>
+<p><span class="math display">\[10^k \geq 1.000.000\]</span></p>
+<p>Vi løser denne ulighed ved at tage logaritmen på begge sider:</p>
+<p><span class="math display">\[\log(10^k) \geq \log(1.000.000)\]</span></p>
+<p>Ved hjælp af logaritmereglen <span class="math inline">\(\log(a^b) = b \cdot \log(a)\)</span> får vi:</p>
+<p><span class="math display">\[k \cdot \log(10) \geq \log(1.000.000)\]</span></p>
+<p><span class="math display">\[k \geq \frac{\log(1.000.000)}{\log(10)} = \frac{6}{1} = 6\]</span></p>
+<p>Lad os tjekke: <span class="math inline">\(10^6 = 1.000.000\)</span> ✓ og <span class="math inline">\(10^5 = 100.000\)</span> (ikke nok)</p>
+<p><strong>Svar:</strong> Pinkoden skal have mindst <strong>6 cifre</strong> for at have mindst 1 million kombinationer.</p>
+</div>
+</div>
+</div>
+<p><strong>Opgave 15:</strong> I en klasse er der 12 piger og 13 drenge. Der skal vælges et udvalg bestående af 3 piger og 2 drenge. På hvor mange måder kan dette udvalg sammensættes?</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vis svar
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-15" class="callout-15-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dette er et problem der består af to separate, uafhængige valg:</p>
+<p><strong>Trin 1: Vælg 3 piger ud af 12</strong></p>
+<p>Dette er uordnet udvælgelse uden tilbagelægning:</p>
+<p><span class="math display">\[\binom{12}{3} = \frac{12!}{3!(12-3)!} = \frac{12 \times 11 \times 10}{3 \times 2 \times 1} = 220\]</span></p>
+<p><strong>Trin 2: Vælg 2 drenge ud af 13</strong></p>
+<p>Dette er også uordnet udvælgelse uden tilbagelægning:</p>
+<p><span class="math display">\[\binom{13}{2} = \frac{13!}{2!(13-2)!} = \frac{13 \times 12}{2 \times 1} = 78\]</span></p>
+<p><strong>Total antal måder:</strong></p>
+<p>Fordi vi skal gøre <em>både</em> trin 1 <em>og</em> trin 2, bruger vi multiplikationsprincippet:</p>
+<p><span class="math display">\[\binom{12}{3} \times \binom{13}{2} = 220 \times 78 = \textbf{17.160}\]</span></p>
+<p>Der er altså <strong>17.160</strong> forskellige måder at sammensætte udvalget.</p>
+</div>
+</div>
+</div>
+<p><strong>Opgave 16:</strong> Hvor mange 4-cifrede pinkoder indeholder <em>mindst én</em> 7?</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-16-contents" aria-controls="callout-16" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vis svar
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-16" class="callout-16-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dette er et fantastisk eksempel på <strong>komplementær tælling</strong> - en metode hvor vi tænker “omvendt”!</p>
+<p><strong>Den svære vej:</strong></p>
+<p>Hvis vi skulle tælle direkte, skulle vi finde alle koder med <em>nøjagtigt</em> én 7, plus alle med <em>nøjagtigt</em> to 7’ere, plus alle med <em>nøjagtigt</em> tre 7’ere, plus koden med fire 7’ere. Det bliver meget kompliceret!</p>
+<p><strong>Den smarte vej - komplementær tælling:</strong></p>
+<p>I stedet tænker vi:</p>
+<p>“Mindst én 7” = “Alle koder” minus “Koder uden nogen 7’er”</p>
+<p><strong>Trin 1: Alle 4-cifrede koder</strong></p>
+<p><span class="math display">\[10^4 = 10.000\]</span></p>
+<p><strong>Trin 2: Koder <em>uden</em> 7’ere</strong></p>
+<p>Hvis vi ikke må bruge 7, har vi kun 9 cifre at vælge imellem (0,1,2,3,4,5,6,8,9):</p>
+<p><span class="math display">\[9^4 = 6.561\]</span></p>
+<p><strong>Trin 3: Subtraher</strong></p>
+<p>Koder med mindst én 7:</p>
+<p><span class="math display">\[10^4 - 9^4 = 10.000 - 6.561 = \textbf{3.439}\]</span></p>
+<p><strong>Svar:</strong> Der er <strong>3.439</strong> pinkoder med mindst én 7.</p>
+<p>Komplementær tælling er en meget nyttig teknik når “mindst én” eller “ikke alle” indgår i opgaven!</p>
+</div>
+</div>
+</div>
+<p><strong>Opgave 17:</strong> Om morgenen skal du vælge morgenmad. Du kan vælge mellem 2 typer brød, 4 slags pålæg og 3 forskellige drikkevarer. Hvor mange forskellige morgenmadskombinationer kan du sammensætte?</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vis svar
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-17" class="callout-17-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dette er et klassisk multiplikationsprincip-problem, som man kan illustrere med et tælletræ:</p>
+<ul>
+<li>Først vælger du brød: 2 muligheder</li>
+<li>Derefter vælger du pålæg: 4 muligheder (for hver brødtype)</li>
+<li>Til sidst vælger du drik: 3 muligheder (for hver kombination af brød og pålæg)</li>
+</ul>
+<p>Det samlede antal kombinationer er:</p>
+<p><span class="math display">\[2 \times 4 \times 3 = \textbf{24}\]</span></p>
+<p>Der er altså <strong>24</strong> forskellige måder at sammensætte din morgenmad på.</p>
+<p>Dette kunne man illustrere med et tælletræ, hvor hvert brødvalg fører til 4 pålægsvalg, og hvert af disse fører til 3 drikkevalg, hvilket giver <span class="math inline">\(2 \times 4 = 8\)</span> grene på niveau 2, og <span class="math inline">\(8 \times 3 = 24\)</span> endeknuder.</p>
+</div>
+</div>
+</div>
+<p><strong>Opgave 18:</strong> Hvad er mest sikkert: en 4-cifret pinkode (hvor cifre må gentages) eller et 3-bogstavs password med små bogstaver fra det danske alfabet (hvor bogstaver må gentages)?</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vis svar
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-18" class="callout-18-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Lad os beregne antallet af muligheder for hver:</p>
+<p><strong>4-cifret pinkode:</strong></p>
+<p>Med 10 cifre (0-9) og 4 positioner, hvor cifre må gentages:</p>
+<p><span class="math display">\[10^4 = \textbf{10.000}\]</span> muligheder</p>
+<p><strong>3-bogstavs password:</strong></p>
+<p>Med 29 bogstaver (a-å) og 3 positioner, hvor bogstaver må gentages:</p>
+<p><span class="math display">\[29^3 = \textbf{24.389}\]</span> muligheder</p>
+<p><strong>Sammenligning:</strong></p>
+<p><span class="math display">\[24.389 &gt; 10.000\]</span></p>
+<p><strong>Svar:</strong> 3-bogstavs passwordet er mere sikkert! Det har <strong>14.389</strong> flere kombinationer end pinkoden.</p>
+<p>Dette viser hvor vigtig længden af alfabetet er for sikkerheden. Selv om passwordet er kortere (3 vs 4 tegn), giver det større alfabet (29 vs 10) flere kombinationer.</p>
+</div>
+</div>
+</div>
+<p><strong>Opgave 19:</strong> Du har 8 forskellige matematikbøger der skal stå på en hylde. På hvor mange forskellige måder kan du arrangere dem?</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-19-contents" aria-controls="callout-19" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vis svar
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-19" class="callout-19-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dette er et problem om <em>permutationer</em> - hvor mange måder kan vi ordne <span class="math inline">\(n\)</span> forskellige objekter?</p>
+<p>Når vi skal placere bøgerne: - Den første plads kan have hvilken som helst af de 8 bøger: 8 muligheder - Den anden plads kan have hvilken som helst af de resterende 7 bøger: 7 muligheder - Den tredje plads: 6 muligheder - … og så videre</p>
+<p>Det samlede antal måder er:</p>
+<p><span class="math display">\[8 \times 7 \times 6 \times 5 \times 4 \times 3 \times 2 \times 1 = 8! = \textbf{40.320}\]</span></p>
+<p>Der er altså <strong>40.320</strong> forskellige måder at arrangere de 8 bøger på.</p>
+<p>Dette er en general regel: <span class="math inline">\(n\)</span> forskellige objekter kan arrangeres på <span class="math inline">\(n!\)</span> måder.</p>
+</div>
+</div>
+</div>
+<p><strong>Opgave 20:</strong> Du har 12 fotos og skal vælge 5 af dem til en udstilling. De 5 fotos skal hænges op på væggen i en bestemt rækkefølge (fra venstre mod højre). På hvor mange måder kan du gøre dette?</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-20-contents" aria-controls="callout-20" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vis svar
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-20" class="callout-20-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dette problem kan løses på to måder:</p>
+<p><strong>Metode 1: To separate trin</strong></p>
+<p>Først skal vi vælge <em>hvilke</em> 5 fotos vi vil bruge (uordnet), og derefter beslutte <em>rækkefølgen</em> de skal hænge i:</p>
+<p><strong>Trin 1:</strong> Vælg 5 fotos ud af 12 (uordnet):</p>
+<p><span class="math display">\[\binom{12}{5} = \frac{12!}{5! \times 7!} = 792\]</span></p>
+<p><strong>Trin 2:</strong> Arranger de 5 valgte fotos i rækkefølge:</p>
+<p><span class="math display">\[5! = 5 \times 4 \times 3 \times 2 \times 1 = 120\]</span></p>
+<p><strong>Total:</strong></p>
+<p><span class="math display">\[\binom{12}{5} \times 5! = 792 \times 120 = \textbf{95.040}\]</span></p>
+<p><strong>Metode 2: Direkte permutation</strong></p>
+<p>Vi vælger 5 fotos ud af 12, hvor rækkefølgen betyder noget. Det er præcis definitionen på <span class="math inline">\(P(12,5)\)</span>:</p>
+<p><span class="math display">\[P(12,5) = \frac{12!}{(12-5)!} = \frac{12!}{7!} = 12 \times 11 \times 10 \times 9 \times 8 = \textbf{95.040}\]</span></p>
+<p>Begge metoder giver samme resultat: <strong>95.040</strong> forskellige måder.</p>
+<p>Dette viser sammenhængen: <span class="math inline">\(\binom{n}{k} \times k! = \frac{n!}{(n-k)!} = P(n,k)\)</span></p>
+</div>
+</div>
+</div>
+<p><strong>Opgave 21:</strong> I kortspillet poker består en hånd af 5 kort trukket fra et almindeligt kortspil med 52 kort. Et “fuldt hus” er en særlig hånd der består af 3 kort med samme værdi og 2 kort med en anden samme værdi (for eksempel 3 konger og 2 ottere). Hvor mange forskellige fuldt hus hænder findes der?</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Vis svar">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-21-contents" aria-controls="callout-21" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vis svar
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-21" class="callout-21-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dette er en af de sværeste opgaver i kombinatorik, fordi den kræver at vi tænker systematisk gennem flere trin!</p>
+<p><strong>Først: Hvad er et kortspil?</strong></p>
+<p>Et almindeligt kortspil har: - 52 kort i alt - 13 forskellige værdier: Es, 2, 3, 4, 5, 6, 7, 8, 9, 10, Knægt, Dame, Konge - 4 forskellige kulører: Hjerter, Ruder, Spar, Klør - Af hver værdi findes der præcis 4 kort (ét i hver kulør)</p>
+<p><strong>Hvad er fuldt hus?</strong></p>
+<p>Fuldt hus = 3 kort af én værdi + 2 kort af en anden værdi</p>
+<p>Eksempel: 3 konger (uanset kulør) + 2 ottere (uanset kulør)</p>
+<p><strong>Hvordan tæller vi alle fuldt hus hænder?</strong></p>
+<p>Vi skal træffe 4 beslutninger:</p>
+<p><strong>Beslutning 1: Hvilken værdi skal vi have 3 af?</strong></p>
+<p>Vi kan vælge mellem alle 13 værdier (es til konge): <strong>13 muligheder</strong></p>
+<p>Lad os sige vi vælger konge.</p>
+<p><strong>Beslutning 2: Hvilke 3 kort skal vi tage af de 4 konger?</strong></p>
+<p>Der findes 4 konger (en i hver kulør), og vi skal vælge 3 af dem:</p>
+<p><span class="math display">\[\binom{4}{3} = 4 \text{ muligheder}\]</span></p>
+<p>(Vi kunne vælge hjerter-ruder-spar, eller hjerter-ruder-klør, eller hjerter-spar-klør, eller ruder-spar-klør)</p>
+<p><strong>Beslutning 3: Hvilken værdi skal vi have 2 af?</strong></p>
+<p>Nu er konge brugt, så vi kan vælge mellem de resterende 12 værdier: <strong>12 muligheder</strong></p>
+<p>Lad os sige vi vælger otter.</p>
+<p><strong>Beslutning 4: Hvilke 2 kort skal vi tage af de 4 ottere?</strong></p>
+<p>Der findes 4 ottere, og vi skal vælge 2 af dem:</p>
+<p><span class="math display">\[\binom{4}{2} = \frac{4 \times 3}{2} = 6 \text{ muligheder}\]</span></p>
+<p><strong>Samlet antal fuldt hus hænder:</strong></p>
+<p>Vi bruger multiplikationsprincippet, fordi vi skal træffe <em>alle</em> 4 beslutninger:</p>
+<p><span class="math display">\[13 \times 4 \times 12 \times 6 = \textbf{3.744}\]</span></p>
+<p><strong>Svar:</strong> Der findes <strong>3.744</strong> forskellige fuldt hus hænder.</p>
+<p><strong>Bonus-perspektiv:</strong></p>
+<p>Vi ved fra kapitlet at der i alt er <span class="math inline">\(\binom{52}{5} = 2.598.960\)</span> pokerhænder. Sandsynligheden for at få fuldt hus er derfor:</p>
+<p><span class="math display">\[\frac{3.744}{2.598.960} \approx 0.14\%\]</span></p>
+<p>Det er altså ca. 1 ud af 694 pokerhænder der er fuldt hus - ret sjældent!</p>
 </div>
 </div>
 </div>
